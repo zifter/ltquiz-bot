@@ -58,7 +58,7 @@ jobs:
         run: |
           echo IMAGE_TAG=${IMAGE_TAG} >> .env
           echo GCP_ARTIFACT_REGISTRY=${{ secrets.GCP_ARTIFACT_REGISTRY }} >> .env
-          echo SERVICE_NAME=lt-quiz-bot >> .env
+          echo SERVICE_NAME=${{ secrets.SERVICE_NAME }} >> .env
 
       - name: 'Authenticate to Google Cloud'
         id: 'auth'
