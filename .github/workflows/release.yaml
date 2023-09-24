@@ -62,6 +62,7 @@ jobs:
           echo LT_QUIZ_TELEGRAM_TOKEN=${{ secrets.LT_QUIZ_TELEGRAM_TOKEN }} >> .env
           echo LT_QUIZ_SECRET_TOKEN=${{ secrets.LT_QUIZ_SECRET_TOKEN }} >> .env
           echo LT_QUIZ_URL=${{ secrets.LT_QUIZ_URL }} >> .env
+          echo LT_QUIZ_ENVIRONMENT_NAME=prod >> .env
 
       - name: 'Authenticate to Google Cloud'
         id: 'auth'
@@ -90,5 +91,5 @@ jobs:
             *Workflow:* [${{ github.workflow }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
             *Environment:* [${{ github.ref_type == 'tag' && 'prod' || 'staging' }}](https://github.com/${{ github.repository }}/deployments/${{ github.ref_type == 'tag' && 'prod' || 'staging' }})
 
-            *Build*  - [${{ needs.build.result }}](https://github.com/${{ github.repository }})/actions/runs/${{ github.run_id }}/jobs/)
-            *Deploy* - [${{ needs.deploy.result }}](https://github.com/${{ github.repository }})/actions/runs/${{ github.run_id }}/jobs/)
+            *Build*  - [${{ needs.build.result }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs/)
+            *Deploy* - [${{ needs.deploy.result }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs/)

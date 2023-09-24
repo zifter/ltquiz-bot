@@ -1,4 +1,3 @@
-import enum
 from dataclasses import field
 from marshmallow_dataclass import dataclass
 

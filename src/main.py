@@ -40,8 +40,11 @@ def get_args():
     parser_handler.add_argument("--port", default=int(env_var('PORT', 8080)), type=int)
     parser_handler.set_defaults(command_func=cmd_webhook)
 
-    parser_init = subparsers.add_parser('generate', help='Generate DB')
+    parser_init = subparsers.add_parser('generate', help='Generate dictionary')
     parser_init.set_defaults(command_func=cmd_generate)
+
+    parser_init = subparsers.add_parser('migrate', help='Migrate App')
+    parser_init.set_defaults(command_func=cmd_migrate)
 
     return parser.parse_args()
 
@@ -58,6 +61,10 @@ def cmd_generate(app: BotApplication):
     DictionaryFactory.generate_from_google_sheet()
 
 
+def cmd_migrate(app: BotApplication):
+    app.migrate()
+
+
 def main(command_func,
          command: str,
          environment_name: str,
@@ -66,7 +73,7 @@ def main(command_func,
     logger.info(f'Start bot with command {command}')
 
     external = ExternalAPI(
-        db=StorageFacade(ndb.Client(namespace=environment_name)),
+        db=StorageFacade(None),  # ndb.Client(namespace=environment_name)
         tg=TelegramFacade(telegram_token),
     )
     d = DictionaryFactory.load_json_file()

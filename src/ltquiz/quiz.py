@@ -3,16 +3,18 @@ import random
 
 import jinja2
 
-from external.dictionary.dictionary_types import Dictionary
+from external.dictionary.datatypes import Dictionary
 
 _TEMPLATE = '''
 *{{word}}*
-{%- if examples %}
-{{ examples|random }}
-{% else %}
 
+{%- if examples %}
+
+{{ examples|random }}
 {%- endif %}
-||{{ translation }}||
+
+||{{ translation }}{%- if mark %} [{{ mark }}]{% endif %}||
+
 '''
 
 

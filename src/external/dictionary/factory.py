@@ -5,7 +5,7 @@ from io import StringIO
 
 import requests
 
-from external.dictionary.dictionary_types import Dictionary, Word
+from external.dictionary.datatypes import Dictionary, Word
 from utils.fs import DICT_PATH
 
 # URL = 'https://docs.google.com/spreadsheets/d/1QSg0_z6ffrrqre8YLIdu83kWCSKzfZcYJIVeUzJ9o4g/edit?hl=ru#gid=0'
@@ -13,7 +13,6 @@ URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTQeF0VmI5PxHDpwKGrIR7VQ8
 
 
 class DictionaryFactory:
-
     @staticmethod
     def load_json_file(filepath=DICT_PATH) -> Dictionary:
         with open(filepath, 'r', encoding='utf-8') as f:
@@ -39,6 +38,9 @@ class DictionaryFactory:
         d = Dictionary()
         # Process the CSV data, e.g., iterate through rows and columns
         for row in reader:
+            if not row[1]:
+                continue
+
             # Process each column
             word = Word(
                 type=row[0],

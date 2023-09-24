@@ -1,9 +1,10 @@
+import asyncio
 import logging
 
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, BotCommand
 
 from external.api import ExternalAPI
-from external.dictionary.dictionary_types import Dictionary
+from external.dictionary.datatypes import Dictionary
 from external.tg import Message, CallbackQuery, CallbackData
 from ltquiz.quiz import Quiz
 
@@ -24,6 +25,12 @@ class BotApplication:
     def run_webhook(self, *args):
         self.external.tg.run_webhook(*args)
 
+    def migrate(self):
+        commands = [
+            BotCommand('/next', 'Next word')
+        ]
+        asyncio.run(self.external.tg.set_my_commands(commands))
+
     async def next_word(self, chat_id):
         text = self.quiz.next_word()
 
@@ -39,7 +46,8 @@ class BotApplication:
     async def process_message(self, msg: Message):
         logger.info(f'Received: {msg}')
 
-        await self.next_word(msg.telegram_id)
+        if msg.text == '/next':
+            await self.next_word(msg.telegram_id)
 
     async def process_callback(self, callback: CallbackQuery):
         await self.external.tg.delete_message(callback.chat_id, callback.message_id)

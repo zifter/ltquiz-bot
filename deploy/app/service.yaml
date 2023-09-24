@@ -14,10 +14,10 @@ spec:
           - webhook
         env:
           - name: LT_QUIZ_ENVIRONMENT_NAME
-            value: "prod"
+            value: "${LT_QUIZ_ENVIRONMENT_NAME}"
           - name: LT_QUIZ_TELEGRAM_TOKEN
             value: "${LT_QUIZ_TELEGRAM_TOKEN}"
           - name: LT_QUIZ_SECRET_TOKEN
             value: "${LT_QUIZ_SECRET_TOKEN}"
           - name: LT_QUIZ_URL
-            value: "https://lt-quiz-bot-fgwbyix3wq-lm.a.run.app"
+            value: "${LT_QUIZ_URL}"

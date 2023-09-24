@@ -11,10 +11,7 @@
       "type": "noun",
       "word": "alų",
       "translation": "пиво",
-      "examples": [
-        "alus - во множественном",
-        "фывы"
-      ],
+      "examples": [],
       "mark": ""
     },
     {
@@ -273,13 +270,6 @@
       "type": "noun",
       "word": "parduotevė",
       "translation": "продуктовый магазин",
-      "examples": [],
-      "mark": ""
-    },
-    {
-      "type": "noun",
-      "word": "",
-      "translation": "",
       "examples": [],
       "mark": ""
     },
@@ -662,6 +652,153 @@
       "mark": ""
     },
     {
+      "type": "noun",
+      "word": "ruduo",
+      "translation": "осень",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "vanduo",
+      "translation": "вода",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "karšti patiekalai",
+      "translation": "горячие блюда",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "kepsnys",
+      "translation": "стейк",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "grynais",
+      "translation": "наличные",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "čia",
+      "translation": "здесь",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "dydis",
+      "translation": "размер",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "savaitė dienos",
+      "translation": "день недели",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "Pirmadienis",
+      "translation": "понедельник",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "antradienis",
+      "translation": "вторник",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "trečiadienį",
+      "translation": "среда",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "ketvirtadienis",
+      "translation": "четверг",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "penktadienis",
+      "translation": "пятница",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "šeštadienis",
+      "translation": "суббота",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "sekmadienis",
+      "translation": "воскресенье",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "Užvakar",
+      "translation": "позавчера",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "vakar",
+      "translation": "вчера",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "Šiandien",
+      "translation": "сегодня",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "Rytoj",
+      "translation": "завтра",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "poryt",
+      "translation": "послезавтра",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "išsinešti",
+      "translation": "на вынос",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "type": "verb",
       "word": "apsipirkti, apsiperka, apsipirko",
       "translation": "закупать",
@@ -844,95 +981,13 @@
       "mark": ""
     },
     {
-      "type": "noun",
-      "word": "savaitė dienos",
-      "translation": "день недели",
-      "examples": [],
-      "mark": ""
-    },
-    {
-      "type": "noun",
-      "word": "Pirmadienis",
-      "translation": "понедельник",
-      "examples": [],
-      "mark": ""
-    },
-    {
-      "type": "noun",
-      "word": "antradienis",
-      "translation": "вторник",
-      "examples": [],
-      "mark": ""
-    },
-    {
-      "type": "noun",
-      "word": "trečiadienį",
-      "translation": "среда",
-      "examples": [],
-      "mark": ""
-    },
-    {
-      "type": "noun",
-      "word": "ketvirtadienis",
-      "translation": "четверг",
-      "examples": [],
-      "mark": ""
-    },
-    {
-      "type": "noun",
-      "word": "penktadienis",
-      "translation": "пятница",
-      "examples": [],
-      "mark": ""
-    },
-    {
-      "type": "noun",
-      "word": "šeštadienis",
-      "translation": "суббота",
-      "examples": [],
-      "mark": ""
-    },
-    {
-      "type": "noun",
-      "word": "sekmadienis",
-      "translation": "воскресенье",
-      "examples": [],
-      "mark": ""
-    },
-    {
-      "type": "noun",
-      "word": "Užvakar",
-      "translation": "позавчера",
-      "examples": [],
-      "mark": ""
-    },
-    {
-      "type": "noun",
-      "word": "vakar",
-      "translation": "вчера",
-      "examples": [],
-      "mark": ""
-    },
-    {
-      "type": "noun",
-      "word": "Šiandien",
-      "translation": "сегодня",
-      "examples": [],
-      "mark": ""
-    },
-    {
-      "type": "noun",
-      "word": "Rytoj",
-      "translation": "завтра",
-      "examples": [],
-      "mark": ""
-    },
-    {
-      "type": "noun",
-      "word": "poryt",
-      "translation": "послезавтра",
-      "examples": [],
-      "mark": ""
+      "type": "verb",
+      "word": "norėti,nori,norėjo",
+      "translation": "хотеть",
+      "examples": [
+        "Aš noriu ilgai miegoti"
+      ],
+      "mark": "в родительном падеже"
     },
     {
       "type": "pronoun",
@@ -959,7 +1014,9 @@
       "type": "pronoun",
       "word": "ką",
       "translation": "что?",
-      "examples": [],
+      "examples": [
+        "ką jis veikia?"
+      ],
       "mark": "C винительным падежом"
     },
     {
@@ -1034,13 +1091,6 @@
     },
     {
       "type": "pronoun",
-      "word": "",
-      "translation": "тоже",
-      "examples": [],
-      "mark": ""
-    },
-    {
-      "type": "pronoun",
       "word": "kur?",
       "translation": "где?",
       "examples": [],
@@ -1099,6 +1149,377 @@
       "type": "pronoun",
       "word": "ant",
       "translation": "на",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "vienas",
+      "translation": "один",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "du",
+      "translation": "два",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "trys",
+      "translation": "три",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "keturi",
+      "translation": "четыре",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "penki",
+      "translation": "пять",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "šeši",
+      "translation": "шесть",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "septyni",
+      "translation": "семь",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "aštuoni",
+      "translation": "восемь",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "devyni",
+      "translation": "девять",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "dešimt",
+      "translation": "десять",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "vienuolika",
+      "translation": "одиннадцать",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "dvylika",
+      "translation": "двенадцать",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "trylika",
+      "translation": "тринадцать",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "viena",
+      "translation": "одна",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "dvi",
+      "translation": "две",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "keturios",
+      "translation": "четыри",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "penkios",
+      "translation": "пять",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "šešios",
+      "translation": "шесть",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "septynios",
+      "translation": "семь",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "aštuonios",
+      "translation": "восемь",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "devynios",
+      "translation": "девять",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "primas",
+      "translation": "первый",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "antras",
+      "translation": "второй",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "trečias",
+      "translation": "третий",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "ketvirtas",
+      "translation": "четверый",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "šeštas",
+      "translation": "шестой",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "septintas",
+      "translation": "седьмой",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "aštuntas",
+      "translation": "восьмой",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "devintas",
+      "translation": "девятый",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "dešimtas",
+      "translation": "десятый",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "vienuoliktas",
+      "translation": "одинадцатый",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "dvyliktas",
+      "translation": "двенадцатый",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "tryliktas",
+      "translation": "тринадцатый",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "prima",
+      "translation": "первая",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "antra",
+      "translation": "вторая",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "trečia",
+      "translation": "третия",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "ketvirta",
+      "translation": "четвертая",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "penkta",
+      "translation": "пятая",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "šešta",
+      "translation": "шестая",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "septina",
+      "translation": "седьмая",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "aštunta",
+      "translation": "восьмая",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "devinta",
+      "translation": "девятая",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "dešimta",
+      "translation": "десятая",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "vienuolikta",
+      "translation": "одинадцатая",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "dvylikta",
+      "translation": "двенадцатая",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "trylikta",
+      "translation": "тринадцатая",
+      "examples": [],
+      "mark": "в ж. р"
+    },
+    {
+      "type": "pronoun",
+      "word": "plius",
+      "translation": "плюс",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "į",
+      "translation": "в",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "ir",
+      "translation": "и",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "phrase",
+      "word": "ką jis veikia?",
+      "translation": "чем он занимается?",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "phrase",
+      "word": "ko norėtumėte?",
+      "translation": "what would you like?",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "phrase",
+      "word": "aš nerečiau",
+      "translation": "я бы хотел...",
+      "examples": [],
+      "mark": "в родительном падеже"
+    },
+    {
+      "type": "phrase",
+      "word": "iki kito karto",
+      "translation": "до следующего раза",
       "examples": [],
       "mark": ""
     }

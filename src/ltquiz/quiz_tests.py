@@ -1,6 +1,6 @@
 import pytest
 
-from external.dictionary.dictionary_types import Dictionary, Word
+from external.dictionary.datatypes import Dictionary, Word
 from ltquiz.quiz import Quiz
 
 
@@ -18,22 +18,22 @@ def create_quiz(word: Word):
                 '''
 *test*
 
-||trans||    
+||trans||
 '''
         ),
         (
-            Word(type='noun', word='test', translation='trans', examples=['example'], mark=''),
+            Word(type='noun', word='test', translation='trans', examples=['example'], mark='mark'),
             '''
 *test*
 
 example
 
-||trans||    
-    ''')
+||trans [mark]||
+'''
+        )
     ),
 )
-def test_quiz_template(word,expected):
+def test_quiz_template(word, expected):
     q = create_quiz(word)
     got = q.next_word()
-    expected = got
-
+    assert expected == got

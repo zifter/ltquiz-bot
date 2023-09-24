@@ -1,3 +1,4 @@
+import asyncio
 import logging
 from enum import Enum
 
@@ -109,6 +110,9 @@ class TelegramFacade:
         logger.info(f'Send message {chat_id} {text}')
 
         await self.application.bot.send_message(chat_id=chat_id, text=text, **kwargs)
+
+    async def set_my_commands(self, commands):
+        await self.application.bot.set_my_commands(commands)
 
     def run_polling(self):
         self.application.run_polling()
