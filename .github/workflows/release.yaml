@@ -73,7 +73,9 @@ jobs:
           credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
 
       - name: 'Deploy App'
-        run: make cloud-run-deploy IMAGE_TAG_WITH_DIGEST=${IMAGE_TAG}
+        run: |
+          make podman-login 
+          make cloud-run-deploy IMAGE_TAG_WITH_DIGEST=${IMAGE_TAG}
 
   notify-pipeline-result:
     runs-on: ubuntu-latest
@@ -93,5 +95,5 @@ jobs:
             *Workflow:* [${{ github.workflow }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
             *Environment:* [${{ github.ref_type == 'tag' && 'prod' || 'staging' }}](https://github.com/${{ github.repository }}/deployments/${{ github.ref_type == 'tag' && 'prod' || 'staging' }})
 
-            *Build*  - [${{ needs.build.result }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/job/)
-            *Deploy* - [${{ needs.deploy.result }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/job/)
+            *Build*  - [${{ needs.build.result }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/)
+            *Deploy* - [${{ needs.deploy.result }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/)

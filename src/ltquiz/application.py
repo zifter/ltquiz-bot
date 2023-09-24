@@ -12,9 +12,11 @@ logger = logging.getLogger('app')
 
 
 class BotApplication:
-    def __init__(self, external: ExternalAPI, d: Dictionary):
+    def __init__(self, external: ExternalAPI, d: Dictionary, version: str):
         self.external = external
+        self.d: Dictionary = d
         self.quiz = Quiz(d)
+        self.version: str = version
 
         self.external.tg.add_message_processor(self.process_message)
         self.external.tg.add_callback_processor(self.process_callback)
@@ -49,6 +51,13 @@ class BotApplication:
 
         if msg.text == '/next':
             await self.next_word(msg.telegram_id)
+        elif msg.text == '/info':
+            text = f'''
+Version: {self.version},
+Dictionary: 
+{self.d.info()}
+            '''
+            await self.external.tg.send_message(msg.telegram_id, text)
 
     async def process_callback(self, callback: CallbackQuery):
         await self.external.tg.delete_message(callback.chat_id, callback.message_id)

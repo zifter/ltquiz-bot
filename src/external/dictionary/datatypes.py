@@ -14,3 +14,6 @@ class Word:
 @dataclass
 class Dictionary:
     words: list[Word] = field(default_factory=list)
+
+    def info(self) -> str:
+        return f'Size: {len(self.words)}'
