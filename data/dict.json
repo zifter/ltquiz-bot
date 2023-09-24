@@ -933,6 +933,174 @@
       "translation": "послезавтра",
       "examples": [],
       "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "kokia?",
+      "translation": "какая?",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "kokia?",
+      "translation": "где, откуда?",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "kiek?",
+      "translation": "сколько?",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "ką",
+      "translation": "что?",
+      "examples": [],
+      "mark": "C винительным падежом"
+    },
+    {
+      "type": "pronoun",
+      "word": "kas?",
+      "translation": "кто?",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "į",
+      "translation": "в",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "pas",
+      "translation": "k (к людям)",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "kada?",
+      "translation": "когда",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "ten",
+      "translation": "там",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "koiame",
+      "translation": "в каком",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "kiekviena",
+      "translation": "каждый",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "nes",
+      "translation": "потому что",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "todėl",
+      "translation": "поэтому",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "apie",
+      "translation": "около",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "",
+      "translation": "тоже",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "kur?",
+      "translation": "где?",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "ten",
+      "translation": "там",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "kodėl",
+      "translation": "почему?",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "todėl",
+      "translation": "потому",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "ko?",
+      "translation": "что?",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "ruduo",
+      "translation": "",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "prie",
+      "translation": "рядом",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "gal",
+      "translation": "maybe?",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "pronoun",
+      "word": "ant",
+      "translation": "на",
+      "examples": [],
+      "mark": ""
     }
   ]
 }

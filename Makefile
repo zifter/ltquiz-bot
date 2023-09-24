@@ -19,6 +19,9 @@ local-test:
 	pipenv run pytest . --cov=src
 	start htmlcov/index.html
 
+local-generate:
+	pipenv run python src/main.py generate
+
 #######
 # IMAGE
 podman-login:
