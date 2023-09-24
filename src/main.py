@@ -81,7 +81,7 @@ def main(command_func,
         tg=TelegramFacade(telegram_token),
     )
     d = DictionaryFactory.load_json_file()
-    bot = BotApplication(external, d)
+    bot = BotApplication(external, d, version)
     command_func(bot, **kwargs)
 
 

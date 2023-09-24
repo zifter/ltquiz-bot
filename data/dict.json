@@ -799,6 +799,209 @@
       "mark": ""
     },
     {
+      "type": "noun",
+      "word": "spalvos",
+      "translation": "цвета",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "geltona",
+      "translation": "желтый",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "orandžine",
+      "translation": "апельсин",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "žalia",
+      "translation": "зеленый",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "raudona",
+      "translation": "Красный",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "mėlyna",
+      "translation": "синий",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "violetinė",
+      "translation": "фиолетовый",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "avietė",
+      "translation": "малина",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "mėlynės",
+      "translation": "черника",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "silauogės",
+      "translation": "голубика",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "rožinė",
+      "translation": "розовый",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "medis",
+      "translation": "дерево",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "žolė",
+      "translation": "трава",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "dagus",
+      "translation": "небо",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "žydras",
+      "translation": "голубой",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "įmone",
+      "translation": "компания",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "vaikystėje",
+      "translation": "детство",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "puodukas",
+      "translation": "чашка",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "vaza",
+      "translation": "ваза",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "Šaukštas",
+      "translation": "ложка",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "Stiklinė",
+      "translation": "стакан",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "Ąsotis",
+      "translation": "кувшин",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "Lėkštė",
+      "translation": "тарелка",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "Peilis",
+      "translation": "нож",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "Taurė",
+      "translation": "бокал",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "Šakutė",
+      "translation": "вилка",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "Šaukštelis",
+      "translation": "ложка",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "Staltiesė",
+      "translation": "скатерть",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "type": "noun",
+      "word": "Servetėlė",
+      "translation": "салфетка",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "type": "verb",
       "word": "apsipirkti, apsiperka, apsipirko",
       "translation": "закупать",
@@ -845,7 +1048,7 @@
       "word": "gerti, geria, gėrė",
       "translation": "пить",
       "examples": [],
-      "mark": ""
+      "mark": "В позитивном говорит в винительном, в отрицании - родительный"
     },
     {
       "type": "verb",
@@ -943,7 +1146,7 @@
       "word": "valgyti, valgo, valgė",
       "translation": "кушать",
       "examples": [],
-      "mark": ""
+      "mark": "В позитивном говорит в винительном, в отрицании - родительный"
     },
     {
       "type": "verb",
@@ -988,6 +1191,24 @@
         "Aš noriu ilgai miegoti"
       ],
       "mark": "в родительном падеже"
+    },
+    {
+      "type": "verb",
+      "word": "Mėgti, mėgsta, mėgo",
+      "translation": "любить\\нравится",
+      "examples": [
+        "mėgstu muziką"
+      ],
+      "mark": "В позитивном говорит в винительном, в отрицании - родительный"
+    },
+    {
+      "type": "verb",
+      "word": "Pamatyti, pamato, pamatė",
+      "translation": "видеть\\заметить\\думать",
+      "examples": [
+        "Taip pat pamačiau"
+      ],
+      "mark": ""
     },
     {
       "type": "pronoun",
