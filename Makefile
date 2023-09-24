@@ -38,6 +38,9 @@ image-build:
 image-push:
 	podman push ${IMAGE_TAG}
 
+image-pull:
+	podman pull ${IMAGE_TAG}
+
 image-run:
 	podman run ${IMAGE_TAG}
 
@@ -45,7 +48,10 @@ image-test:
 	podman run ${IMAGE_TAG} pytest . --cov=src
 
 cloud-run-deploy:
-	podman run --env-file <(env | grep LT_QUIZ_) -v ~/.config/gcloud:/root/.config/gcloud ${IMAGE_TAG} python main.py migrate
+	podman run --env-file <(env | grep -e LT_QUIZ_ -e GOOGLE_APPLICATION_CREDENTIALS) \
+		-v ~/.config/gcloud:/root/.config/gcloud \
+		-v ${HOME}/work:${HOME}/work ${IMAGE_TAG} \
+		python main.py migrate
 	cat deploy/app/service.yaml | envsubst > tmp-service.yaml
 	gcloud run services replace tmp-service.yaml --region europe-central2
 
