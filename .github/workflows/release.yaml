@@ -67,7 +67,7 @@ jobs:
           credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
 
       - name: 'Deploy App'
-        run: make cloud-run-deploy
+        run: make cloud-run-deploy IMAGE_TAG_WITH_DIGEST=${IMAGE_TAG}
 
   notify-pipeline-result:
     runs-on: ubuntu-latest

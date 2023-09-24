@@ -40,7 +40,7 @@ image-test:
 
 cloud-run-deploy:
 	cat deploy/app/service.yaml | envsubst > tmp-service.yaml
-	gcloud run services replace tmp-service.yaml --region  europe-central2
+	gcloud run services replace tmp-service.yaml --region europe-central2
 
 cloud-run-make-public:
-	gcloud run services add-iam-policy-binding ${SERVICE_NAME} --region  europe-central2 --member="allUsers" --role="roles/run.invoker"
+	gcloud run services add-iam-policy-binding ${SERVICE_NAME} --region europe-central2 --member="allUsers" --role="roles/run.invoker"
