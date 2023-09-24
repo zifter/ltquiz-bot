@@ -13,6 +13,8 @@ spec:
           - main.py
           - webhook
         env:
+          - name: LT_QUIZ_GCP_PROJECT_ID
+            value: "${LT_QUIZ_GCP_PROJECT_ID}"
           - name: LT_QUIZ_ENVIRONMENT_NAME
             value: "${LT_QUIZ_ENVIRONMENT_NAME}"
           - name: LT_QUIZ_TELEGRAM_TOKEN
@@ -21,3 +23,5 @@ spec:
             value: "${LT_QUIZ_SECRET_TOKEN}"
           - name: LT_QUIZ_URL
             value: "${LT_QUIZ_URL}"
+          - name: LT_QUIZ_VERSION
+            value: "${LT_QUIZ_VERSION}"

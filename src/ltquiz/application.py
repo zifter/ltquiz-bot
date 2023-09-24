@@ -27,7 +27,8 @@ class BotApplication:
 
     def migrate(self):
         commands = [
-            BotCommand('/next', 'Next word')
+            BotCommand('/next', 'Next word'),
+            BotCommand('/info', 'Info about this bot'),
         ]
         asyncio.run(self.external.tg.set_my_commands(commands))
 

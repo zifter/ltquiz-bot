@@ -59,6 +59,7 @@ jobs:
           echo IMAGE_TAG=${IMAGE_TAG} >> .env
           echo GCP_ARTIFACT_REGISTRY=${{ secrets.GCP_ARTIFACT_REGISTRY }} >> .env
           echo SERVICE_NAME=${{ secrets.SERVICE_NAME }} >> .env
+          echo LT_QUIZ_GCP_PROJECT_ID=${{ secrets.LT_QUIZ_GCP_PROJECT_ID }} >> .env
           echo LT_QUIZ_TELEGRAM_TOKEN=${{ secrets.LT_QUIZ_TELEGRAM_TOKEN }} >> .env
           echo LT_QUIZ_SECRET_TOKEN=${{ secrets.LT_QUIZ_SECRET_TOKEN }} >> .env
           echo LT_QUIZ_URL=${{ secrets.LT_QUIZ_URL }} >> .env
@@ -68,6 +69,7 @@ jobs:
         id: 'auth'
         uses: 'google-github-actions/auth@v1'
         with:
+          project_id: '${{ secrets.GCP_PROJECT_ID }}'
           credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
 
       - name: 'Deploy App'
@@ -91,5 +93,5 @@ jobs:
             *Workflow:* [${{ github.workflow }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
             *Environment:* [${{ github.ref_type == 'tag' && 'prod' || 'staging' }}](https://github.com/${{ github.repository }}/deployments/${{ github.ref_type == 'tag' && 'prod' || 'staging' }})
 
-            *Build*  - [${{ needs.build.result }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs/)
-            *Deploy* - [${{ needs.deploy.result }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs/)
+            *Build*  - [${{ needs.build.result }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/job/)
+            *Deploy* - [${{ needs.deploy.result }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/job/)

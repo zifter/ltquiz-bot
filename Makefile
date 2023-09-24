@@ -3,6 +3,8 @@ include .env
 .EXPORT_ALL_VARIABLES:
 
 IMAGE_TAG_WITH_DIGEST := $(shell podman inspect --format='{{index .RepoDigests 0}}' ${IMAGE_TAG})
+LT_QUIZ_VERSION=$(shell date)
+
 SHELL=/bin/bash
 
 dep-up:
@@ -43,7 +45,7 @@ image-test:
 	podman run ${IMAGE_TAG} pytest . --cov=src
 
 cloud-run-deploy:
-	podman run --env-file <(env | grep LT_QUIZ_) ${IMAGE_TAG} python main.py migrate
+	podman run --env-file <(env | grep LT_QUIZ_) -v ~/.config/gcloud:/root/.config/gcloud ${IMAGE_TAG} python main.py migrate
 	cat deploy/app/service.yaml | envsubst > tmp-service.yaml
 	gcloud run services replace tmp-service.yaml --region europe-central2
 

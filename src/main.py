@@ -26,7 +26,9 @@ def env_var(env, default=None, prefix='LT_QUIZ_'):
 
 def get_args():
     parser = ArgumentParser()
+    parser.add_argument("--gcp-project-id", default=env_var('GCP_PROJECT_ID', 'test'), type=str)
     parser.add_argument("--environment-name", default=env_var('ENVIRONMENT_NAME', 'test'), type=str)
+    parser.add_argument("--version", default=env_var('VERSION', 'local'), type=str)
     parser.add_argument("--telegram-token", default=env_var('TELEGRAM_TOKEN', None))
 
     subparsers = parser.add_subparsers(dest='command')
@@ -67,13 +69,15 @@ def cmd_migrate(app: BotApplication):
 
 def main(command_func,
          command: str,
+         gcp_project_id: str,
          environment_name: str,
          telegram_token: str,
+         version: str,
          **kwargs):
     logger.info(f'Start bot with command {command}')
 
     external = ExternalAPI(
-        db=StorageFacade(None),  # ndb.Client(namespace=environment_name)
+        db=StorageFacade(ndb.Client(project=gcp_project_id, namespace=environment_name)),
         tg=TelegramFacade(telegram_token),
     )
     d = DictionaryFactory.load_json_file()
