@@ -1,0 +1,92 @@
+name: Deploy🚀
+
+on:
+  push:
+    branches:
+      - main
+  release:
+    types: [published]
+
+concurrency:
+  group: ci-deployment-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  IMAGE_TAG: ${{ secrets.GCP_ARTIFACT_REGISTRY }}/bot/bot:${{ github.ref_name }}-${{ github.sha }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: 'Prepare Local Workspace'
+        run: |
+          echo IMAGE_TAG=${IMAGE_TAG} >> .env
+          echo GCP_ARTIFACT_REGISTRY=${{ secrets.GCP_ARTIFACT_REGISTRY }} >> .env
+
+      - name: Build Bot Image
+        run: make image-build
+
+      - name: Test Bot Image
+        run: make image-test
+
+      - name: 'Authenticate to Google Cloud'
+        uses: 'google-github-actions/auth@v1'
+        with:
+          credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
+
+      - name: Push Images
+        id: bot-push-image
+        run: |
+          make podman-login 
+          make image-push
+
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    needs: build
+    environment: ${{ github.ref_type == 'tag' && 'prod' || 'staging' }}
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: 'Prepare Local Workspace'
+        run: |
+          echo IMAGE_TAG=${IMAGE_TAG} >> .env
+          echo GCP_ARTIFACT_REGISTRY=${{ secrets.GCP_ARTIFACT_REGISTRY }} >> .env
+          echo SERVICE_NAME=lt-quiz-bot >> .env
+
+      - name: 'Authenticate to Google Cloud'
+        id: 'auth'
+        uses: 'google-github-actions/auth@v1'
+        with:
+          credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
+
+      - name: 'Deploy App'
+        env:
+        run: make cloud-run-deploy
+
+  notify-pipeline-result:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: [build,deploy]
+    if: always()
+    steps:
+      - name: Send Telegram message after pipeline
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CI_CD_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_CI_CD_BOT_TOKEN }}
+          format: markdown
+          message: |
+            *Repository:* [${{ github.repository }}](https://github.com/${{ github.repository }})
+            *Commit:* [${{ github.event.commits[0].message }}](https://github.com/${{ github.repository }}/commit/${{github.sha}})
+            *Workflow:* [${{ github.workflow }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            *Environment:* [${{ github.ref_type == 'tag' && 'prod' || 'staging' }}](https://github.com/${{ github.repository }}/deployments/${{ github.ref_type == 'tag' && 'prod' || 'staging' }})
+
+            *Build*  - [${{ needs.build.result }}](https://github.com/${{ github.repository }})/actions/runs/${{ github.run_id }}/jobs/)
+            *Deploy* - [${{ needs.deploy.result }}](https://github.com/${{ github.repository }})/actions/runs/${{ github.run_id }}/jobs/)

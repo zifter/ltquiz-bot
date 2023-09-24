@@ -1,0 +1,23 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: ${SERVICE_NAME}
+spec:
+  template:
+    spec:
+      containers:
+      - image: ${IMAGE_TAG_WITH_DIGEST}
+        imagePullPolicy: Always
+        args:
+          - python
+          - main.py
+          - webhook
+        env:
+          - name: LT_QUIZ_ENVIRONMENT_NAME
+            value: "prod"
+          - name: LT_QUIZ_TELEGRAM_TOKEN
+            value: "${LT_QUIZ_TELEGRAM_TOKEN}"
+          - name: LT_QUIZ_SECRET_TOKEN
+            value: "${LT_QUIZ_SECRET_TOKEN}"
+          - name: LT_QUIZ_URL
+            value: "https://lt-quiz-bot-fgwbyix3wq-lm.a.run.app"
