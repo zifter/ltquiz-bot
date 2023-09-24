@@ -2,7 +2,7 @@ include .env
 
 .EXPORT_ALL_VARIABLES:
 
-IMAGE_TAG_WITH_DIGEST := $(shell docker inspect --format='{{index .RepoDigests 0}}' ${IMAGE_TAG})
+IMAGE_TAG_WITH_DIGEST := $(shell podman inspect --format='{{index .RepoDigests 0}}' ${IMAGE_TAG})
 
 dep-up:
 	pipenv update --dev
