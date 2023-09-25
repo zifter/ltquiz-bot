@@ -46,7 +46,7 @@ jobs:
           make image-push
 
       - name: Push Latest
-        id: bot-push-image
+        id: bot-latest-image
         if: github.ref == 'refs/heads/main'  # Condition to run on main branch only
         run: | 
           make image-tag-latest
