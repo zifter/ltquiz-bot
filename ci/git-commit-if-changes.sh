@@ -13,6 +13,6 @@ if [ $(git status --porcelain | wc -l) -eq "0" ]; then
 else
   echo "  🔴 Git repo has changes. Commit"
   git add data
-  git commit -m "Commit to ${BRANCH} changes for because of changes in ${COMMIT}"
+  git commit -m "Commit to ${BRANCH} changes of data"
   git push origin ${BRANCH}
 fi
