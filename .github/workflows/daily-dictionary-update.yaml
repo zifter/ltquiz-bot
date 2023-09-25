@@ -39,6 +39,12 @@ jobs:
           make podman-login 
           make image-update-data
 
+      - name: Setup git config
+        run: |
+          # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+
       - name: Commit if any changes
         run: |
           make git-commit-if-changes
