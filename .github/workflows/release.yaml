@@ -13,6 +13,7 @@ concurrency:
 
 env:
   IMAGE_TAG: ${{ secrets.GCP_ARTIFACT_REGISTRY }}/bot/bot:${{ github.ref_name }}-${{ github.sha }}
+  IMAGE_TAG_LATEST: ${{ secrets.GCP_ARTIFACT_REGISTRY }}/bot/bot:latest
 
 jobs:
   build:
@@ -43,6 +44,12 @@ jobs:
         run: |
           make podman-login 
           make image-push
+
+      - name: Push Latest
+        id: bot-push-image
+        if: github.ref == 'refs/heads/main'  # Condition to run on main branch only
+        run: | 
+          make image-tag-latest
 
   deploy:
     runs-on: ubuntu-latest

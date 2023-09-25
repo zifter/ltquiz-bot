@@ -47,14 +47,14 @@ image-run:
 image-test:
 	podman run ${IMAGE_TAG} pytest . --cov=src
 
-image-generate:
+image-update-data:
 	podman run --name generate-layer --env-file <(env | grep -e LT_QUIZ_ -e GOOGLE_APPLICATION_CREDENTIALS) \
-		-v data:/app/new_data \
-		-v ~/.config/gcloud:/root/.config/gcloud \
+		-v new_data:/app/new_data \
+		-v ${HOME}/.config/gcloud:/root/.config/gcloud \
 		-v ${HOME}/work:${HOME}/work ${IMAGE_TAG} \
 		python main.py generate --data-dir /app/new_data
 	rm -rf new_data && mkdir new_data
-	podman cp generate-layer:/app/new_data/ ./new_data
+	podman cp generate-layer:/app/new_data/ new_data
 	podman rm generate-layer
 	rm -rf data && mv new_data data
 
@@ -63,7 +63,7 @@ git-commit-if-changes:
 
 cloud-run-deploy:
 	podman run --env-file <(env | grep -e LT_QUIZ_ -e GOOGLE_APPLICATION_CREDENTIALS) \
-		-v ~/.config/gcloud:/root/.config/gcloud \
+		-v ${HOME}/.config/gcloud:/root/.config/gcloud \
 		-v ${HOME}/work:${HOME}/work ${IMAGE_TAG} \
 		python main.py migrate
 	cat deploy/app/service.yaml | envsubst > tmp-service.yaml
@@ -71,3 +71,7 @@ cloud-run-deploy:
 
 cloud-run-make-public:
 	gcloud run services add-iam-policy-binding ${SERVICE_NAME} --region europe-central2 --member="allUsers" --role="roles/run.invoker"
+
+image-tag-latest:
+	podman tag ${IMAGE_TAG} ${IMAGE_TAG_LATEST}
+	podman push ${IMAGE_TAG_LATEST}

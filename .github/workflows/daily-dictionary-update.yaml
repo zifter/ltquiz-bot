@@ -6,7 +6,7 @@ on:
   workflow_dispatch:  # Allow manual triggering
 
 env:
-  IMAGE_TAG: local
+  IMAGE_TAG: ${{ secrets.GCP_ARTIFACT_REGISTRY }}/bot/bot:latest
 
 jobs:
   update:
@@ -34,10 +34,11 @@ jobs:
           project_id: '${{ secrets.GCP_PROJECT_ID }}'
           credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
 
-      - name: Build Bot Image
-        run: make image-build
-
-      - name: Run script
+      - name: Update data
         run: |
-          make image-generate
+          make podman-login 
+          make image-update-data
+
+      - name: Commit if any changes
+        run: |
           make git-commit-if-changes
