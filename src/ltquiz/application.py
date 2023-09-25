@@ -38,18 +38,18 @@ class BotApplication:
         text = self.quiz.next_word()
 
         know_data = CallbackData('know', {})
-        repeat_data = CallbackData('repeat', {})
+        word_data = CallbackData('word', {})
 
-        next = InlineKeyboardButton("next", callback_data=repeat_data.serialize())
+        word = InlineKeyboardButton("word", callback_data=word_data.serialize())
         know = InlineKeyboardButton("know", callback_data=know_data.serialize())
-        reply_markup = InlineKeyboardMarkup([[next, know]])
+        reply_markup = InlineKeyboardMarkup([[word, know]])
 
         await self.external.tg.send_message(chat_id, text, parse_mode='MarkdownV2', reply_markup=reply_markup)
 
     async def process_message(self, msg: Message):
         logger.info(f'Received: {msg}')
 
-        if msg.text == '/next':
+        if msg.text == '/word':
             await self.next_word(msg.telegram_id)
         elif msg.text == '/info':
             text = f'''

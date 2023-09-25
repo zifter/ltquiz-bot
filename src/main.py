@@ -3,6 +3,7 @@ import os
 import sys
 
 from argparse import ArgumentParser
+from pathlib import Path
 
 from google.cloud import ndb
 
@@ -12,7 +13,7 @@ from external.tg import TelegramFacade
 
 from ltquiz.application import BotApplication
 from external.storage import StorageFacade
-
+from utils import fs
 
 logger = logging.getLogger('lt-quiz-bot')
 
@@ -33,20 +34,21 @@ def get_args():
 
     subparsers = parser.add_subparsers(dest='command')
 
-    parser_handler = subparsers.add_parser('polling', help='Run Telegram MessageHandler')
-    parser_handler.set_defaults(command_func=cmd_polling)
+    parser_polling = subparsers.add_parser('polling', help='Run Telegram MessageHandler')
+    parser_polling.set_defaults(command_func=cmd_polling)
 
-    parser_handler = subparsers.add_parser('webhook', help='Run Telegram MessageHandler')
-    parser_handler.add_argument("--secret-token", default=env_var('SECRET_TOKEN', None), type=str)
-    parser_handler.add_argument("--url", default=env_var('URL', None), type=str)
-    parser_handler.add_argument("--port", default=int(env_var('PORT', 8080)), type=int)
-    parser_handler.set_defaults(command_func=cmd_webhook)
+    parser_webhook = subparsers.add_parser('webhook', help='Run Telegram MessageHandler')
+    parser_webhook.add_argument("--secret-token", default=env_var('SECRET_TOKEN', None), type=str)
+    parser_webhook.add_argument("--url", default=env_var('URL', None), type=str)
+    parser_webhook.add_argument("--port", default=int(env_var('PORT', 8080)), type=int)
+    parser_webhook.set_defaults(command_func=cmd_webhook)
 
-    parser_init = subparsers.add_parser('generate', help='Generate dictionary')
-    parser_init.set_defaults(command_func=cmd_generate)
+    parser_gen = subparsers.add_parser('generate', help='Generate dictionary')
+    parser_gen.add_argument("--data-dir", default=env_var('DATA_DIR', fs.data_dir()), type=Path)
+    parser_gen.set_defaults(command_func=cmd_generate)
 
-    parser_init = subparsers.add_parser('migrate', help='Migrate App')
-    parser_init.set_defaults(command_func=cmd_migrate)
+    parser_migrate = subparsers.add_parser('migrate', help='Migrate App')
+    parser_migrate.set_defaults(command_func=cmd_migrate)
 
     return parser.parse_args()
 
@@ -59,8 +61,8 @@ def cmd_webhook(app: BotApplication, port: int, secret_token: str, url: str):
     app.run_webhook(port, secret_token, url)
 
 
-def cmd_generate(app: BotApplication):
-    DictionaryFactory.generate_from_google_sheet()
+def cmd_generate(app: BotApplication, data_dir):
+    DictionaryFactory.generate_from_google_sheet(data_dir)
 
 
 def cmd_migrate(app: BotApplication):

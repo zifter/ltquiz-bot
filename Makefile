@@ -47,6 +47,20 @@ image-run:
 image-test:
 	podman run ${IMAGE_TAG} pytest . --cov=src
 
+image-generate:
+	podman run --name generate-layer --env-file <(env | grep -e LT_QUIZ_ -e GOOGLE_APPLICATION_CREDENTIALS) \
+		-v data:/app/new_data \
+		-v ~/.config/gcloud:/root/.config/gcloud \
+		-v ${HOME}/work:${HOME}/work ${IMAGE_TAG} \
+		python main.py generate --data-dir /app/new_data
+	rm -rf new_data && mkdir new_data
+	podman cp generate-layer:/app/new_data/ ./new_data
+	podman rm generate-layer
+	rm -rf data && mv new_data data
+
+git-commit-if-changes:
+	./ci/git-commit-if-changes.sh
+
 cloud-run-deploy:
 	podman run --env-file <(env | grep -e LT_QUIZ_ -e GOOGLE_APPLICATION_CREDENTIALS) \
 		-v ~/.config/gcloud:/root/.config/gcloud \

@@ -1,6 +1,4 @@
 import csv
-import dataclasses
-import json
 from io import StringIO
 
 import requests
@@ -26,7 +24,7 @@ class DictionaryFactory:
         return d
 
     @staticmethod
-    def generate_from_google_sheet(url=URL, target=DICT_PATH):
+    def generate_from_google_sheet(data_dir, url=URL):
         response = requests.get(url)
         response.encoding = 'utf-8'
         if response.status_code != 200:
@@ -53,7 +51,7 @@ class DictionaryFactory:
 
         d.words = d.words[1:]
 
-        with open(target, 'w', encoding='utf8') as f:
+        with open(data_dir / 'dict.json', 'w', encoding='utf8') as f:
             value = Dictionary.Schema().dumps(d, indent=2, ensure_ascii=False)
             f.write(value)
 
