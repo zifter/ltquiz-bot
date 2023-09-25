@@ -5,8 +5,11 @@ on:
     - cron: '30 10 * * *'  # Schedule to run every day at midnight UTC
   workflow_dispatch:  # Allow manual triggering
 
+env:
+  IMAGE_TAG: local
+
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
