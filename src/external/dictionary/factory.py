@@ -4,6 +4,7 @@ from io import StringIO
 import requests
 
 from external.dictionary.datatypes import Dictionary, Word
+from utils import fs
 from utils.fs import DICT_PATH
 
 # URL = 'https://docs.google.com/spreadsheets/d/1QSg0_z6ffrrqre8YLIdu83kWCSKzfZcYJIVeUzJ9o4g/edit?hl=ru#gid=0'
@@ -24,7 +25,7 @@ class DictionaryFactory:
         return d
 
     @staticmethod
-    def generate_from_google_sheet(data_dir, url=URL):
+    def generate_from_google_sheet(data_dir=fs.data_dir(), url=URL):
         response = requests.get(url)
         response.encoding = 'utf-8'
         if response.status_code != 200:

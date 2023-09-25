@@ -1,0 +1,39 @@
+name: Daily Workflow
+
+on:
+  schedule:
+    - cron: '30 10 * * *'  # Schedule to run every day at midnight UTC
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: 'Prepare Local Workspace'
+        run: |
+          echo IMAGE_TAG=${IMAGE_TAG} >> .env
+          echo GCP_ARTIFACT_REGISTRY=${{ secrets.GCP_ARTIFACT_REGISTRY }} >> .env
+          echo SERVICE_NAME=${{ secrets.SERVICE_NAME }} >> .env
+          echo LT_QUIZ_GCP_PROJECT_ID=${{ secrets.LT_QUIZ_GCP_PROJECT_ID }} >> .env
+          echo LT_QUIZ_TELEGRAM_TOKEN=${{ secrets.LT_QUIZ_TELEGRAM_TOKEN }} >> .env
+          echo LT_QUIZ_SECRET_TOKEN=${{ secrets.LT_QUIZ_SECRET_TOKEN }} >> .env
+          echo LT_QUIZ_URL=${{ secrets.LT_QUIZ_URL }} >> .env
+          echo LT_QUIZ_ENVIRONMENT_NAME=prod >> .env
+
+      - name: 'Authenticate to Google Cloud'
+        id: 'auth'
+        uses: 'google-github-actions/auth@v1'
+        with:
+          project_id: '${{ secrets.GCP_PROJECT_ID }}'
+          credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
+
+      - name: Build Bot Image
+        run: make image-build
+
+      - name: Run script
+        run: |
+          make image-generate
+          make git-commit-if-changes
