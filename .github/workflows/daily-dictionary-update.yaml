@@ -3,6 +3,7 @@ name: Daily Dictionary Update
 on:
   schedule:
     - cron: '30 10 * * *'  # Schedule to run every day at midnight UTC
+  workflow_dispatch:  # Allow manual triggering
 
 jobs:
   build:
