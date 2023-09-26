@@ -1,7 +1,5 @@
 from dataclasses import dataclass
 
-from google.cloud import ndb
-
 
 @dataclass
 class UserKnownWord:
