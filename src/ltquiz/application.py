@@ -2,6 +2,7 @@ import asyncio
 import logging
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, BotCommand
+from telegram.constants import ParseMode
 
 from external.api import ExternalAPI
 from external.dictionary.datatypes import Dictionary
@@ -28,6 +29,8 @@ class BotApplication:
         self.external.tg.run_webhook(*args)
 
     def migrate(self):
+        self.external.db.migrate()
+
         commands = [
             BotCommand('/word', 'Show word card'),
             BotCommand('/info', 'Info about this bot'),
@@ -44,7 +47,7 @@ class BotApplication:
         know = InlineKeyboardButton("know", callback_data=know_data.serialize())
         reply_markup = InlineKeyboardMarkup([[word, know]])
 
-        await self.external.tg.send_message(telegram_id, text, parse_mode='MarkdownV2', reply_markup=reply_markup)
+        await self.external.tg.send_message(telegram_id, text, parse_mode=ParseMode.HTML, reply_markup=reply_markup)
 
     async def process_message(self, msg: Message):
         logger.info(f'Received: {msg}')
@@ -70,5 +73,6 @@ Dictionary:
             word_id = callback.callback_data.data['word_id']
             word = self.d.get_word_by_id(word_id)
             self.quiz.know(callback.telegram_id, word)
+            await self.next_word(callback.telegram_id)
         else:
             logger.error('Unknown callback')

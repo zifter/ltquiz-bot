@@ -21,19 +21,19 @@ def create_quiz(word: Word):
         (
                 Word(id=1, type='noun', word='test', translation='trans', examples=[], mark=''),
                 '''
-*test*
+<b>test</b>
 
-||trans||
+<span class="tg-spoiler">trans</span>
 '''
         ),
         (
             Word(id=1, type='noun', word='test', translation='trans', examples=['example'], mark='mark'),
             '''
-*test*
+<b>test</b>
 
 example
 
-||trans [mark]||
+<span class="tg-spoiler">trans [mark]</span>
 '''
         )
     ),

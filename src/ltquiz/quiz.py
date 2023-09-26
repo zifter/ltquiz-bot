@@ -1,21 +1,23 @@
 import dataclasses
 import random
+from copy import deepcopy
 from typing import Tuple
 
 import jinja2
+from telegram.helpers import escape_markdown
 
 from external.dictionary.datatypes import Dictionary, Word
 from external.storage import StorageFacade
 
 _TEMPLATE = '''
-*{{word}}*
+<b>{{word}}</b>
 
 {%- if examples %}
 
 {{ examples|random }}
 {%- endif %}
 
-||{{ translation }}{%- if mark %} [{{ mark }}]{% endif %}||
+<span class="tg-spoiler">{{ translation }}{%- if mark %} [{{ mark }}]{% endif %}</span>
 
 '''
 
@@ -38,7 +40,8 @@ class Quiz:
             attempts -= 1
             word = random.choice(self.dictionary.words)
 
-        return word, self.template.render(**dataclasses.asdict(word))
+        return word, self.template.render(dataclasses.asdict(word))
+
 
     def know(self, telegram_id: int, word: Word):
         self.db.make_known(telegram_id, word)

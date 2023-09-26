@@ -6,7 +6,7 @@ from argparse import ArgumentParser
 from pathlib import Path
 from typing import Callable
 
-from google.cloud import ndb
+from google.cloud import firestore
 
 from external.api import ExternalAPI
 from external.dictionary.factory import DictionaryFactory
@@ -56,7 +56,7 @@ def get_args():
 
 def create_bot(gcp_project_id: str, environment_name: str, telegram_token: str, version: str):
     external = ExternalAPI(
-        db=StorageFacade(ndb.Client(project=gcp_project_id, namespace=environment_name)),
+        db=StorageFacade(firestore.Client(project=gcp_project_id), namespace=environment_name),
         tg=TelegramFacade(telegram_token),
     )
     d = DictionaryFactory.load_json_file()

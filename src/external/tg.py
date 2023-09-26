@@ -3,7 +3,9 @@ import logging
 from enum import Enum
 
 from telegram import Update
+from telegram.constants import ParseMode
 from telegram.ext import ContextTypes, Application, MessageHandler, filters, CallbackQueryHandler
+from telegram.helpers import escape_markdown
 
 logger = logging.getLogger('telegram')
 
@@ -108,7 +110,6 @@ class TelegramFacade:
 
     async def send_message(self, chat_id: int, text: str, **kwargs):
         logger.info(f'Send message {chat_id} {text}')
-
         await self.application.bot.send_message(chat_id=chat_id, text=text, **kwargs)
 
     async def set_my_commands(self, commands):
