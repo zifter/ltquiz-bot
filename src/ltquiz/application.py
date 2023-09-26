@@ -29,7 +29,7 @@ class BotApplication:
 
     def migrate(self):
         commands = [
-            BotCommand('/next', 'Next word'),
+            BotCommand('/word', 'Show word card'),
             BotCommand('/info', 'Info about this bot'),
         ]
         asyncio.run(self.external.tg.set_my_commands(commands))
@@ -37,10 +37,10 @@ class BotApplication:
     async def next_word(self, chat_id):
         text = self.quiz.next_word()
 
+        word_data = CallbackData('next', {})
         know_data = CallbackData('know', {})
-        word_data = CallbackData('word', {})
 
-        word = InlineKeyboardButton("word", callback_data=word_data.serialize())
+        word = InlineKeyboardButton("next", callback_data=word_data.serialize())
         know = InlineKeyboardButton("know", callback_data=know_data.serialize())
         reply_markup = InlineKeyboardMarkup([[word, know]])
 
@@ -61,5 +61,4 @@ Dictionary:
 
     async def process_callback(self, callback: CallbackQuery):
         await self.external.tg.delete_message(callback.chat_id, callback.message_id)
-
         await self.next_word(callback.telegram_id)
