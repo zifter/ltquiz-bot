@@ -68,7 +68,7 @@ def cmd_polling(bot_creator: Callable[[], BotApplication]):
 
 
 def cmd_webhook(bot_creator: Callable[[], BotApplication], port: int, secret_token: str, url: str):
-    bot_creator().migrate().run_webhook(port, secret_token, url)
+    bot_creator().run_webhook(port, secret_token, url)
 
 
 def cmd_generate(bot_creator: Callable[[], BotApplication], data_dir):
