@@ -4,6 +4,7 @@ import sys
 
 from argparse import ArgumentParser
 from pathlib import Path
+from typing import Callable
 
 from google.cloud import ndb
 
@@ -53,20 +54,29 @@ def get_args():
     return parser.parse_args()
 
 
-def cmd_polling(app: BotApplication):
-    app.run_polling()
+def create_bot(gcp_project_id: str, environment_name: str, telegram_token: str, version: str):
+    external = ExternalAPI(
+        db=StorageFacade(ndb.Client(project=gcp_project_id, namespace=environment_name)),
+        tg=TelegramFacade(telegram_token),
+    )
+    d = DictionaryFactory.load_json_file()
+    return BotApplication(external, d, version)
 
 
-def cmd_webhook(app: BotApplication, port: int, secret_token: str, url: str):
-    app.run_webhook(port, secret_token, url)
+def cmd_polling(bot_creator: Callable[[], BotApplication]):
+    bot_creator().run_polling()
 
 
-def cmd_generate(app: BotApplication, data_dir):
+def cmd_webhook(bot_creator: Callable[[], BotApplication], port: int, secret_token: str, url: str):
+    bot_creator().migrate().run_webhook(port, secret_token, url)
+
+
+def cmd_generate(bot_creator: Callable[[], BotApplication], data_dir):
     DictionaryFactory.generate_from_google_sheet(data_dir)
 
 
-def cmd_migrate(app: BotApplication):
-    app.migrate()
+def cmd_migrate(bot_creator: Callable[[], BotApplication]):
+    bot_creator().migrate()
 
 
 def main(command_func,
@@ -78,13 +88,10 @@ def main(command_func,
          **kwargs):
     logger.info(f'Start bot with command {command}')
 
-    external = ExternalAPI(
-        db=StorageFacade(ndb.Client(project=gcp_project_id, namespace=environment_name)),
-        tg=TelegramFacade(telegram_token),
-    )
-    d = DictionaryFactory.load_json_file()
-    bot = BotApplication(external, d, version)
-    command_func(bot, **kwargs)
+    def bot_creator() -> BotApplication:
+        return create_bot(gcp_project_id, environment_name, telegram_token, version)
+
+    command_func(bot_creator, **kwargs)
 
 
 if __name__ == '__main__':

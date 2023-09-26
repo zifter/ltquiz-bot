@@ -11,6 +11,10 @@ from utils.fs import DICT_PATH
 URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTQeF0VmI5PxHDpwKGrIR7VQ8b439DwWvb0nTtDfCWA8hlNcHICbVGMjLweirf5DXAniuA_8Tu2kOav/pub?gid=0&single=true&output=csv'
 
 
+def get_stable_id(v: str):
+    return hash(v) % (2 ** 32 - 1)
+
+
 class DictionaryFactory:
     @staticmethod
     def load_json_file(filepath=DICT_PATH) -> Dictionary:
@@ -42,6 +46,7 @@ class DictionaryFactory:
 
             # Process each column
             word = Word(
+                id=get_stable_id(row[0] + row[1]),
                 type=row[0],
                 word=row[1],
                 translation=row[2],
@@ -51,6 +56,8 @@ class DictionaryFactory:
             d.words.append(word)
 
         d.words = d.words[1:]
+
+        d.validate()
 
         with open(data_dir / 'dict.json', 'w', encoding='utf8') as f:
             value = Dictionary.Schema().dumps(d, indent=2, ensure_ascii=False)

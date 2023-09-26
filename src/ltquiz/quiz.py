@@ -1,9 +1,11 @@
 import dataclasses
 import random
+from typing import Tuple
 
 import jinja2
 
-from external.dictionary.datatypes import Dictionary
+from external.dictionary.datatypes import Dictionary, Word
+from external.storage import StorageFacade
 
 _TEMPLATE = '''
 *{{word}}*
@@ -19,12 +21,24 @@ _TEMPLATE = '''
 
 
 class Quiz:
-    def __init__(self, d: Dictionary):
+    def __init__(self, d: Dictionary, db: StorageFacade):
         self.dictionary = d
+        self.db = db
 
         env = jinja2.Environment()
         self.template = env.from_string(_TEMPLATE)
 
-    def next_word(self) -> str:
+    def next_word(self, telegram_id: int) -> tuple[Word, str]:
+        attempts = 5
         word = random.choice(self.dictionary.words)
-        return self.template.render(**dataclasses.asdict(word))
+        while attempts > 0:
+            if not self.db.is_known(telegram_id, word):
+                break
+
+            attempts -= 1
+            word = random.choice(self.dictionary.words)
+
+        return word, self.template.render(**dataclasses.asdict(word))
+
+    def know(self, telegram_id: int, word: Word):
+        self.db.make_known(telegram_id, word)
