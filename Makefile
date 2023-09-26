@@ -19,7 +19,7 @@ gcp-auth:
 #######
 # LOCAL
 local-test:
-	pipenv run pytest . --cov=src
+	pipenv run pytest src --cov=src
 	start htmlcov/index.html
 
 local-generate:
