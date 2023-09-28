@@ -32,28 +32,34 @@ class BotApplication:
         self.external.db.migrate()
 
         commands = [
-            BotCommand('/word', 'Show word card'),
+            BotCommand('/quiz_lt', 'Show word card in lithuanian with hidden translation'),
+            BotCommand('/quiz_ru', 'Show word card in russian with hidden translation'),
             BotCommand('/info', 'Info about this bot'),
         ]
         asyncio.run(self.external.tg.set_my_commands(commands))
 
-    async def next_word(self, telegram_id):
-        word, text = self.quiz.next_word(telegram_id)
+    async def next_word(self, telegram_id, mode):
+        word = self.quiz.next_word(telegram_id)
+        text = self.quiz.template_card(word, mode)
 
-        word_data = CallbackData('next', {})
-        know_data = CallbackData('know', {'word_id': word.id})
+        word_data = CallbackData('next', {'mode': mode})
+        know_data = CallbackData('know', {'mode': mode, 'word_id': word.id})
+        stop_data = CallbackData('stop', {})
 
         word = InlineKeyboardButton("next", callback_data=word_data.serialize())
         know = InlineKeyboardButton("know", callback_data=know_data.serialize())
-        reply_markup = InlineKeyboardMarkup([[word, know]])
+        stop = InlineKeyboardButton("stop", callback_data=stop_data.serialize())
+        reply_markup = InlineKeyboardMarkup([[word, know, stop]])
 
         await self.external.tg.send_message(telegram_id, text, parse_mode=ParseMode.HTML, reply_markup=reply_markup)
 
     async def process_message(self, msg: Message):
         logger.info(f'Received: {msg}')
 
-        if msg.text == '/word':
-            await self.next_word(msg.telegram_id)
+        if msg.text == '/quiz_lt':
+            await self.next_word(msg.telegram_id, 'lt')
+        if msg.text == '/quiz_ru':
+            await self.next_word(msg.telegram_id, 'ru')
         elif msg.text == '/info':
             text = f'''
 Version: {self.version},
@@ -68,11 +74,13 @@ Dictionary:
         await self.external.tg.delete_message(callback.chat_id, callback.message_id)
 
         if callback.callback_data.name == 'next':
-            await self.next_word(callback.telegram_id)
+            await self.next_word(callback.telegram_id, callback.callback_data.data['mode'])
         elif callback.callback_data.name == 'know':
             word_id = callback.callback_data.data['word_id']
             word = self.d.get_word_by_id(word_id)
             self.quiz.know(callback.telegram_id, word)
-            await self.next_word(callback.telegram_id)
+            await self.next_word(callback.telegram_id, callback.callback_data.data['mode'])
+        elif callback.callback_data.name == 'know':
+            pass
         else:
             logger.error('Unknown callback')
