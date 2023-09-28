@@ -40,8 +40,8 @@ class Quiz:
         self.db = db
 
         env = jinja2.Environment()
-        self.template_orig = env.from_string(_TEMPLATE_ORIG)
-        self.template_tran = env.from_string(_TEMPLATE_TRAN)
+        self._template_orig = env.from_string(_TEMPLATE_ORIG)
+        self._template_tran = env.from_string(_TEMPLATE_TRAN)
 
     def next_word(self, telegram_id: int) -> Word:
         attempts = 5
@@ -57,9 +57,9 @@ class Quiz:
 
     def template_card(self, word: Word, mode: str) -> str:
         if mode == 'lt':
-            return self.template_orig.render(dataclasses.asdict(word))
+            return self._template_orig.render(dataclasses.asdict(word))
         else:
-            return self.template_tran.render(dataclasses.asdict(word))
+            return self._template_tran.render(dataclasses.asdict(word))
 
     def know(self, telegram_id: int, word: Word):
         self.db.make_known(telegram_id, word)

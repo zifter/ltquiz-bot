@@ -40,6 +40,12 @@ example
 )
 def test_quiz_template(word, expected):
     q = create_quiz(word)
+    text = q.template_card(word, 'lt')
+    assert expected == text
+
+
+def test_create_quiz():
+    word = Word(id=1, type='noun', word='test', translation='trans', examples=[], mark='')
+    q = create_quiz(word)
     q.db.is_known = MagicMock(return_value=False)
-    word, template = q.next_word(1)
-    assert expected == template
+    q.next_word(1)
