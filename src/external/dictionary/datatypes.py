@@ -1,3 +1,4 @@
+from datetime import datetime, timezone
 import logging
 from dataclasses import field
 from marshmallow_dataclass import dataclass
@@ -18,6 +19,7 @@ class Word:
 
 @dataclass
 class Dictionary:
+    created: datetime = datetime.now(tz=timezone.utc)
     words: list[Word] = field(default_factory=list)
 
     def validate(self):
@@ -39,4 +41,4 @@ class Dictionary:
         return None
 
     def info(self) -> str:
-        return f'Size: {len(self.words)}'
+        return f'Updated: {self.created}, Size: {len(self.words)}'

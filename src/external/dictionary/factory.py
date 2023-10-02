@@ -1,4 +1,5 @@
 import csv
+from datetime import datetime, timezone
 from io import StringIO
 
 import requests
@@ -38,7 +39,9 @@ class DictionaryFactory:
         csv_data = StringIO(response.text)
         reader = csv.reader(csv_data)
 
-        d = Dictionary()
+        d = Dictionary(
+            created=datetime.now(tz=timezone.utc)
+        )
         # Process the CSV data, e.g., iterate through rows and columns
         for row in reader:
             if not row[1]:
@@ -55,7 +58,7 @@ class DictionaryFactory:
             )
             d.words.append(word)
 
-        d.words = d.words[1:]
+        d.words = sorted(d.words[1:], key=lambda w: w.id)
 
         d.validate()
 
