@@ -1,6 +1,7 @@
 import asyncio
 import logging
 from enum import Enum
+from pathlib import Path
 
 from telegram import Update
 from telegram.constants import ParseMode
@@ -111,6 +112,10 @@ class TelegramFacade:
     async def send_message(self, chat_id: int, text: str, **kwargs):
         logger.info(f'Send message {chat_id} {text}')
         await self.application.bot.send_message(chat_id=chat_id, text=text, **kwargs)
+
+    async def send_photo(self, chat_id: int, text: str, filename: Path, **kwargs):
+        logger.info(f'Send message {chat_id} {text}')
+        await self.application.bot.send_photo(chat_id=chat_id, photo=filename, caption=text, **kwargs)
 
     async def set_my_commands(self, commands):
         await self.application.bot.set_my_commands(commands)

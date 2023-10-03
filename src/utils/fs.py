@@ -16,3 +16,4 @@ def data_dir() -> Path:
 
 
 DICT_PATH = data_dir() / 'dict.json'
+RULES_PATH = data_dir() / 'rules.json'

@@ -9,7 +9,7 @@ from typing import Callable
 from google.cloud import firestore
 
 from external.api import ExternalAPI
-from external.dictionary.factory import DictionaryFactory
+from external.dictionary.factory import KnowledgeBaseFactory
 from external.tg import TelegramFacade
 
 from ltquiz.application import BotApplication
@@ -59,8 +59,8 @@ def create_bot(gcp_project_id: str, environment_name: str, telegram_token: str, 
         db=StorageFacade(firestore.Client(project=gcp_project_id), namespace=environment_name),
         tg=TelegramFacade(telegram_token),
     )
-    d = DictionaryFactory.load_json_file()
-    return BotApplication(external, d, version)
+    knowledge = KnowledgeBaseFactory.create_knowledge_base()
+    return BotApplication(external, knowledge, version)
 
 
 def cmd_polling(bot_creator: Callable[[], BotApplication]):
@@ -72,7 +72,7 @@ def cmd_webhook(bot_creator: Callable[[], BotApplication], port: int, secret_tok
 
 
 def cmd_generate(bot_creator: Callable[[], BotApplication], data_dir):
-    DictionaryFactory.generate_from_google_sheet(data_dir)
+    KnowledgeBaseFactory.generate_dicitionary_from_google_sheet(data_dir)
 
 
 def cmd_migrate(bot_creator: Callable[[], BotApplication]):

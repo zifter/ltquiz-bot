@@ -4,9 +4,9 @@ from io import StringIO
 
 import requests
 
-from external.dictionary.datatypes import Dictionary, Word
+from external.dictionary.datatypes import Dictionary, Word, KnowledgeBase, Rules
 from utils import fs
-from utils.fs import DICT_PATH
+from utils.fs import DICT_PATH, RULES_PATH
 
 # URL = 'https://docs.google.com/spreadsheets/d/1QSg0_z6ffrrqre8YLIdu83kWCSKzfZcYJIVeUzJ9o4g/edit?hl=ru#gid=0'
 URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTQeF0VmI5PxHDpwKGrIR7VQ8b439DwWvb0nTtDfCWA8hlNcHICbVGMjLweirf5DXAniuA_8Tu2kOav/pub?gid=0&single=true&output=csv'
@@ -16,21 +16,36 @@ def get_stable_id(v: str):
     return hash(v) % (2 ** 32 - 1)
 
 
-class DictionaryFactory:
+class KnowledgeBaseFactory:
     @staticmethod
-    def load_json_file(filepath=DICT_PATH) -> Dictionary:
+    def create_knowledge_base() -> KnowledgeBase:
+        return KnowledgeBase(
+            rules=KnowledgeBaseFactory.load_rules_from_file(),
+            dictionary=KnowledgeBaseFactory.load_dictionary_from_file(),
+        )
+
+    @staticmethod
+    def load_dictionary_from_file(filepath=DICT_PATH) -> Dictionary:
         with open(filepath, 'r', encoding='utf-8') as f:
             s = f.read()
 
-        return DictionaryFactory.load_json_string(s)
+        return KnowledgeBaseFactory.load_dictionary_from_json_string(s)
 
     @staticmethod
-    def load_json_string(s) -> Dictionary:
+    def load_dictionary_from_json_string(s) -> Dictionary:
         d = Dictionary.Schema().loads(s)
         return d
 
     @staticmethod
-    def generate_from_google_sheet(data_dir=fs.data_dir(), url=URL):
+    def load_rules_from_file(filepath=RULES_PATH) -> Rules:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            s = f.read()
+
+        d = Rules.Schema().loads(s)
+        return d
+
+    @staticmethod
+    def generate_dicitionary_from_google_sheet(data_dir=fs.data_dir(), url=URL):
         response = requests.get(url)
         response.encoding = 'utf-8'
         if response.status_code != 200:

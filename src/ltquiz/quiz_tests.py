@@ -2,7 +2,7 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from external.dictionary.datatypes import Dictionary, Word
+from external.dictionary.datatypes import Dictionary, Word, Rules, KnowledgeBase
 from external.storage import StorageFacade
 from ltquiz.quiz import Quiz
 
@@ -12,9 +12,12 @@ def create_quiz(word: Word):
         word,
     ]
     db = StorageFacade(None)
-    d = Dictionary(words=words)
+    knowledge = KnowledgeBase(
+        rules=Rules(rules=[]),
+        dictionary=Dictionary(words=words),
+    )
 
-    return Quiz(d, db)
+    return Quiz(knowledge, db)
 
 
 @pytest.mark.parametrize("word,expected", (
@@ -40,7 +43,7 @@ example
 )
 def test_quiz_template(word, expected):
     q = create_quiz(word)
-    text = q.template_card(word, 'lt')
+    text = q.template_word_card(word, 'lt')
     assert expected == text
 
 
