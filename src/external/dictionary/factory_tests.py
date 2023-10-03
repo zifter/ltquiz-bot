@@ -8,6 +8,10 @@ def test_create_knowledge_base():
     k = KnowledgeBaseFactory.create_knowledge_base()
     assert k
 
+    for rule in k.rules.rules:
+        if rule.image:
+            assert rule.get_image_path().exists()
+
 
 def test_load_dictionary_from_file():
     d = KnowledgeBaseFactory.load_dictionary_from_file()
