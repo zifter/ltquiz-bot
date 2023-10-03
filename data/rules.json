@@ -2,9 +2,45 @@
   "rules": [
     {
       "id": 1,
-      "name": "įnaginkas/instrumental/творительный падеж",
+      "name": "įnagininkas (instrumental/творительный падеж)",
       "descr": "",
       "image": "images/instrumental.jpg"
+    },
+    {
+      "id": 2,
+      "name": "preposition",
+      "descr": "",
+      "image": "images/preposition.jpg"
+    },
+    {
+      "id": 3,
+      "name": "countable vs uncountable",
+      "descr": "",
+      "image": "images/countable.jpg"
+    },
+    {
+      "id": 4,
+      "name": "vardininkas (singular to plural/именительный падеж)",
+      "descr": "kas? что?",
+      "image": "images/plural.jpg"
+    },
+    {
+      "id": 5,
+      "name": "galininkas (accusative/винительный падеж)",
+      "descr": "ką?",
+      "image": "images/accusative.jpg"
+    },
+    {
+      "id": 6,
+      "name": "galininkas (accusative/винительный падеж)",
+      "descr": "",
+      "image": "images/accusative.jpg"
+    },
+    {
+      "id": 7,
+      "name": "kilmininkas (genitive/родительный падеж)",
+      "descr": "ko?",
+      "image": "images/genitive.jpg"
     }
   ]
 }
