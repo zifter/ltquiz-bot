@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "įnagininkas (instrumental/творительный падеж)",
-      "descr": "",
+      "descr": "Kuo?",
       "image": "images/instrumental.jpg"
     },
     {
@@ -20,7 +20,7 @@
     },
     {
       "id": 4,
-      "name": "vardininkas (singular to plural/именительный падеж)",
+      "name": "vardininkas (varininkas/именительный падеж)",
       "descr": "kas? что?",
       "image": "images/plural.jpg"
     },
@@ -28,12 +28,6 @@
       "id": 5,
       "name": "galininkas (accusative/винительный падеж)",
       "descr": "ką?",
-      "image": "images/accusative.jpg"
-    },
-    {
-      "id": 6,
-      "name": "galininkas (accusative/винительный падеж)",
-      "descr": "",
       "image": "images/accusative.jpg"
     },
     {
