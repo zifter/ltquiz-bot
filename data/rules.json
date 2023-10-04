@@ -35,6 +35,18 @@
       "name": "kilmininkas (genitive/родительный падеж)",
       "descr": "ko?",
       "image": "images/genitive.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Склонение названий",
+      "descr": "Ji mėgsta vaikšcioti Belmonto parke. parke - местный падеж, Belmonto - родительный падеж. Belmontas parkas",
+      "image": ""
+    },
+    {
+      "id": 9,
+      "name": "su/be ...",
+      "descr": "c/без ... + родительный падеж",
+      "image": ""
     }
   ]
 }
