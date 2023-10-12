@@ -56,7 +56,8 @@ image-update-data:
 	rm -rf new_data && mkdir new_data
 	podman cp generate-layer:/app/new_data/ new_data
 	podman rm generate-layer
-	rm -rf data && mv new_data data
+	mv -f new_data/* data/
+	rm -rf new_data
 
 git-commit-if-changes:
 	./ci/git-commit-if-changes.sh
