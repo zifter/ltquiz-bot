@@ -13,7 +13,8 @@ URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTQeF0VmI5PxHDpwKGrIR7VQ8
 
 
 def get_stable_id(v: str):
-    return hash(v) % (2 ** 32 - 1)
+    n = int.from_bytes(v.encode(), 'little')
+    return n % (2 ** 32 - 1)
 
 
 class KnowledgeBaseFactory:
@@ -73,7 +74,7 @@ class KnowledgeBaseFactory:
             )
             d.words.append(word)
 
-        d.words = sorted(d.words[1:], key=lambda w: w.id)
+        d.words = sorted(d.words[1:], key=lambda w: w.word)
 
         d.validate()
 

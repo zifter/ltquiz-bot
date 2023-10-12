@@ -1,7 +1,11 @@
 import json
 
-from external.dictionary.factory import KnowledgeBaseFactory
+from external.dictionary.factory import KnowledgeBaseFactory, get_stable_id
 from utils.fs import DICT_PATH
+
+
+def test_get_stable_id():
+    assert get_stable_id("noun"+"vienaskaita") == 1051181231
 
 
 def test_create_knowledge_base():
