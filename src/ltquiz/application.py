@@ -3,6 +3,7 @@ import logging
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, BotCommand
 from telegram.constants import ParseMode
+from telegram.error import BadRequest
 
 from external.api import ExternalAPI
 from external.dictionary.datatypes import Dictionary, KnowledgeBase, Rule
@@ -94,7 +95,10 @@ Knowledge DB:
             logger.error('Unknown command')
 
     async def process_callback(self, callback: CallbackQuery):
-        await self.external.tg.delete_message(callback.chat_id, callback.message_id)
+        try:
+            await self.external.tg.delete_message(callback.chat_id, callback.message_id)
+        except BadRequest:
+            logger.exception('Failed to delete message')
 
         if callback.callback_data.name == 'next':
             await self.next_word(callback.telegram_id, callback.callback_data.data['mode'])

@@ -47,6 +47,12 @@
       "name": "su/be ...",
       "descr": "c/без ... + родительный падеж",
       "image": ""
+    },
+    {
+      "id": 10,
+      "name": "Глаголы и вопросы",
+      "descr": "",
+      "image": "verbs-and-questions.png"
     }
   ]
 }
