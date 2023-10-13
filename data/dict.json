@@ -1,5 +1,5 @@
 {
-  "created": "2023-10-12T22:00:59.039283+00:00",
+  "created": "2023-10-13T10:35:07.748883+00:00",
   "words": [
     {
       "id": 4227778829,
@@ -168,6 +168,14 @@
       "type": "noun",
       "word": "anūke",
       "translation": "внучка",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 782890507,
+      "type": "verb",
+      "word": "apibūdinti",
+      "translation": "",
       "examples": [],
       "mark": ""
     },
@@ -1554,6 +1562,14 @@
       "translation": "каждый",
       "examples": [],
       "mark": ""
+    },
+    {
+      "id": 3705329992,
+      "type": "noun",
+      "word": "kieno",
+      "translation": "чьей?",
+      "examples": [],
+      "mark": "когда спрашивают про человека"
     },
     {
       "id": 3797432900,
@@ -3870,6 +3886,14 @@
       "type": "verb",
       "word": "važiuoti, važiuoja, važiavo",
       "translation": "ехать (на транспортном средстве)",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3537848389,
+      "type": "noun",
+      "word": "veidas",
+      "translation": "лицо",
       "examples": [],
       "mark": ""
     },
