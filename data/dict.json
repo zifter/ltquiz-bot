@@ -1,5 +1,5 @@
 {
-  "created": "2023-10-17T10:35:31.823982+00:00",
+  "created": "2023-10-17T20:00:08.934075+00:00",
   "words": [
     {
       "id": 4227778829,
@@ -84,6 +84,14 @@
       "mark": ""
     },
     {
+      "id": 1179302308,
+      "type": "noun",
+      "word": "aksesuarai",
+      "translation": "аксессуары",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3790527183,
       "type": "noun",
       "word": "akys",
@@ -132,6 +140,14 @@
       "mark": "и родительный  падеж"
     },
     {
+      "id": 961234747,
+      "type": "noun",
+      "word": "antakiai",
+      "translation": "брови",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 827350094,
       "type": "pronoun",
       "word": "antra",
@@ -172,10 +188,10 @@
       "mark": ""
     },
     {
-      "id": 782890507,
+      "id": 3144696363,
       "type": "verb",
-      "word": "apibūdinti",
-      "translation": "",
+      "word": "apibūdinti,apibūdina,apibūdino",
+      "translation": "описывать",
       "examples": [],
       "mark": ""
     },
@@ -208,6 +224,14 @@
       "type": "verb",
       "word": "apsipirkti, apsiperka, apsipirko",
       "translation": "закупать",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 2774159048,
+      "type": "noun",
+      "word": "apyrankė",
+      "translation": "браслет",
       "examples": [],
       "mark": ""
     },
@@ -288,6 +312,22 @@
       "type": "noun",
       "word": "augintinis",
       "translation": "питомец",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3789641776,
+      "type": "noun",
+      "word": "auksas",
+      "translation": "золото",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3890799938,
+      "type": "noun",
+      "word": "ausys",
+      "translation": "уши",
       "examples": [],
       "mark": ""
     },
@@ -412,10 +452,26 @@
       "mark": ""
     },
     {
+      "id": 3588477233,
+      "type": "noun",
+      "word": "banga",
+      "translation": "волна",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 1246940673,
       "type": "noun",
       "word": "banglentė",
       "translation": "доска для серфинга",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3627763505,
+      "type": "adj",
+      "word": "banguoti",
+      "translation": "волнистый",
       "examples": [],
       "mark": ""
     },
@@ -432,6 +488,14 @@
       "type": "noun",
       "word": "baras",
       "translation": "бар",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3336886051,
+      "type": "adj",
+      "word": "barzda",
+      "translation": "борода",
       "examples": [],
       "mark": ""
     },
@@ -744,6 +808,14 @@
       "mark": ""
     },
     {
+      "id": 878394001,
+      "type": "noun",
+      "word": "diržas",
+      "translation": "ремень",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 982913193,
       "type": "noun",
       "word": "drabužiai",
@@ -759,6 +831,22 @@
       "examples": [
         "draudžiama valgyti ledus"
       ],
+      "mark": ""
+    },
+    {
+      "id": 3454355252,
+      "type": "adj",
+      "word": "dryziai",
+      "translation": "в полоску",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 2225360316,
+      "type": "adj",
+      "word": "dryžuotas",
+      "translation": "в полоску",
+      "examples": [],
       "mark": ""
     },
     {
@@ -980,6 +1068,14 @@
       "mark": ""
     },
     {
+      "id": 843138609,
+      "type": "adj",
+      "word": "garbanoti",
+      "translation": "кудрявый",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3739682315,
       "type": "adj",
       "word": "geltona, geltonos",
@@ -1028,10 +1124,26 @@
       "mark": ""
     },
     {
+      "id": 1447381815,
+      "type": "noun",
+      "word": "gintaras",
+      "translation": "янтарь",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3468891187,
       "type": "verb",
       "word": "girdėti,girdi,girdėjo",
       "translation": "слышать",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 956938194,
+      "type": "noun",
+      "word": "grandinėlė",
+      "translation": "цепь",
       "examples": [],
       "mark": ""
     },
@@ -1086,6 +1198,14 @@
       "mark": ""
     },
     {
+      "id": 1015139341,
+      "type": "noun",
+      "word": "gėlėtas",
+      "translation": "цветок",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 282841123,
       "type": "phrase",
       "word": "iki kito karto",
@@ -1113,6 +1233,14 @@
         "Antras ūsas, –",
         "Tai juokingas troleibusas!"
       ],
+      "mark": ""
+    },
+    {
+      "id": 1775487949,
+      "type": "adj",
+      "word": "ilgi",
+      "translation": "длинный",
+      "examples": [],
       "mark": ""
     },
     {
@@ -1236,6 +1364,14 @@
       "mark": "можно использовать и kada"
     },
     {
+      "id": 1313095491,
+      "type": "noun",
+      "word": "kailines",
+      "translation": "шерсть",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 1329610579,
       "type": "noun",
       "word": "kaimynas",
@@ -1344,6 +1480,14 @@
       "type": "noun",
       "word": "karinės institucijos",
       "translation": "военные учреждения",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1195981382,
+      "type": "noun",
+      "word": "karoliai",
+      "translation": "ожерелье",
       "examples": [],
       "mark": ""
     },
@@ -1468,6 +1612,14 @@
       "mark": ""
     },
     {
+      "id": 3713363101,
+      "type": "noun",
+      "word": "kelnės",
+      "translation": "брюки",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3797503559,
       "type": "noun",
       "word": "kepsnys",
@@ -1564,8 +1716,8 @@
       "mark": ""
     },
     {
-      "id": 3705329992,
-      "type": "noun",
+      "id": 1229737289,
+      "type": "pronoun",
       "word": "kieno",
       "translation": "чьей?",
       "examples": [],
@@ -1592,6 +1744,14 @@
       "type": "noun",
       "word": "kitą",
       "translation": "следующий",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 2818525110,
+      "type": "noun",
+      "word": "kišinės",
+      "translation": "карманы",
       "examples": [],
       "mark": ""
     },
@@ -1718,6 +1878,14 @@
       "mark": ""
     },
     {
+      "id": 424106581,
+      "type": "pronoun",
+      "word": "kuri?",
+      "translation": "который из?",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3655232931,
       "type": "pronoun",
       "word": "ką",
@@ -1794,6 +1962,14 @@
       "mark": ""
     },
     {
+      "id": 1429423922,
+      "type": "adj",
+      "word": "languotas",
+      "translation": "клетчатый",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3656044863,
       "type": "noun",
       "word": "lauke",
@@ -1842,10 +2018,34 @@
       "mark": ""
     },
     {
+      "id": 1939818304,
+      "type": "noun",
+      "word": "liemenė",
+      "translation": "жилет",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3732184392,
       "type": "noun",
       "word": "ligonė",
       "translation": "больница",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3487816013,
+      "type": "noun",
+      "word": "linas",
+      "translation": "льен",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3671344691,
+      "type": "adj",
+      "word": "lininis",
+      "translation": "льняной",
       "examples": [],
       "mark": ""
     },
@@ -1922,6 +2122,14 @@
       "mark": ""
     },
     {
+      "id": 3469858613,
+      "type": "adj",
+      "word": "margas",
+      "translation": "красочный",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 2730139110,
       "type": "noun",
       "word": "marškiniai",
@@ -1978,6 +2186,30 @@
       "mark": ""
     },
     {
+      "id": 1246249285,
+      "type": "noun",
+      "word": "medvilne",
+      "translation": "хлопок",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1162521244,
+      "type": "adj",
+      "word": "medvilninis",
+      "translation": "хлопковый",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 2604380681,
+      "type": "noun",
+      "word": "medžiagos",
+      "translation": "материалы",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 2834645283,
       "type": "verb",
       "word": "megzti, megza, mezgė",
@@ -1985,6 +2217,14 @@
       "examples": [
         "ю"
       ],
+      "mark": ""
+    },
+    {
+      "id": 1380662979,
+      "type": "noun",
+      "word": "megztinis",
+      "translation": "свитер",
+      "examples": [],
       "mark": ""
     },
     {
@@ -2304,6 +2544,14 @@
       "mark": ""
     },
     {
+      "id": 1859572701,
+      "type": "noun",
+      "word": "oda",
+      "translation": "кожа",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 1184238768,
       "type": "noun",
       "word": "orandžine",
@@ -2388,6 +2636,14 @@
       "type": "pronoun",
       "word": "palei",
       "translation": "вдоль",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3806479437,
+      "type": "noun",
+      "word": "paltos",
+      "translation": "пальто",
       "examples": [],
       "mark": ""
     },
@@ -2682,6 +2938,16 @@
       "mark": ""
     },
     {
+      "id": 3829415241,
+      "type": "noun",
+      "word": "plaukai",
+      "translation": "волосы",
+      "examples": [
+        "Jos plaukai ilgi, banguoti ir raudoni. Didelės akys melenos spalvos su didelės akiniai. Ji turi strazdanas."
+      ],
+      "mark": ""
+    },
+    {
       "id": 1603156110,
       "type": "verb",
       "word": "plaukioti, plaukioja, plaukiojo",
@@ -2698,10 +2964,26 @@
       "mark": ""
     },
     {
+      "id": 3520449997,
+      "type": "adj",
+      "word": "plika",
+      "translation": "голый",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 1381192012,
       "type": "pronoun",
       "word": "plius",
       "translation": "плюс",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3705986111,
+      "type": "noun",
+      "word": "plona",
+      "translation": "тонкий",
       "examples": [],
       "mark": ""
     },
@@ -2902,6 +3184,22 @@
       "mark": "в мужском роде"
     },
     {
+      "id": 279196245,
+      "type": "noun",
+      "word": "raštai",
+      "translation": "узор",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1216387499,
+      "type": "adj",
+      "word": "raštuotas",
+      "translation": "узорный",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3525911881,
       "type": "verb",
       "word": "reikėti, reikia,reikėjo",
@@ -2982,6 +3280,14 @@
       "mark": ""
     },
     {
+      "id": 3725368655,
+      "type": "adj",
+      "word": "ryškus",
+      "translation": "яркий",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3508641345,
       "type": "noun",
       "word": "rūbai",
@@ -2994,6 +3300,30 @@
       "type": "verb",
       "word": "rūkyti,rūko,rūkė",
       "translation": "Курение, курение, курение",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3487355105,
+      "type": "noun",
+      "word": "saga",
+      "translation": "пуговица",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3729799758,
+      "type": "noun",
+      "word": "sagomis",
+      "translation": "кнопки",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3722236244,
+      "type": "noun",
+      "word": "sagos",
+      "translation": "кнопки",
       "examples": [],
       "mark": ""
     },
@@ -3056,6 +3386,14 @@
       "mark": ""
     },
     {
+      "id": 853333369,
+      "type": "noun",
+      "word": "segė",
+      "translation": "брошь",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 1102946993,
       "type": "noun",
       "word": "sekmadienis",
@@ -3068,6 +3406,14 @@
       "type": "noun",
       "word": "senamiestis",
       "translation": "старый город",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3872117446,
+      "type": "adj",
+      "word": "senas",
+      "translation": "старый",
       "examples": [],
       "mark": ""
     },
@@ -3136,6 +3482,14 @@
       "mark": ""
     },
     {
+      "id": 1127959364,
+      "type": "noun",
+      "word": "sidabras",
+      "translation": "серебро",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3705364133,
       "type": "noun",
       "word": "sieną",
@@ -3184,10 +3538,26 @@
       "mark": ""
     },
     {
+      "id": 2023442247,
+      "type": "noun",
+      "word": "skarelė",
+      "translation": "платок",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 4086624277,
       "type": "verb",
       "word": "skristi,skrenda,skrido",
       "translation": "летать",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1417688840,
+      "type": "noun",
+      "word": "skrybėlė",
+      "translation": "Шапка",
       "examples": [],
       "mark": ""
     },
@@ -3204,6 +3574,14 @@
       "type": "noun",
       "word": "skėtis",
       "translation": "зонтик",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3705618248,
+      "type": "noun",
+      "word": "sninga",
+      "translation": "снег",
       "examples": [],
       "mark": ""
     },
@@ -3384,6 +3762,14 @@
       "mark": ""
     },
     {
+      "id": 3427815252,
+      "type": "verb",
+      "word": "sutikti",
+      "translation": "соглашаться",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 2806599642,
       "type": "noun",
       "word": "svetainė",
@@ -3482,6 +3868,22 @@
       "mark": ""
     },
     {
+      "id": 3722328867,
+      "type": "adj",
+      "word": "tamsiai",
+      "translation": "темный",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3923628597,
+      "type": "adj",
+      "word": "tamsus",
+      "translation": "темный",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3813562944,
       "type": "pronoun",
       "word": "tarp",
@@ -3506,6 +3908,14 @@
       "mark": ""
     },
     {
+      "id": 1098946872,
+      "type": "adj",
+      "word": "taškuota",
+      "translation": "пунктирный",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3813291604,
       "type": "noun",
       "word": "teatras",
@@ -3526,6 +3936,22 @@
       "type": "noun",
       "word": "tiesa",
       "translation": "правда",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 970866038,
+      "type": "adj",
+      "word": "tiesūs",
+      "translation": "прямой",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 970866038,
+      "type": "adj",
+      "word": "tiesūs",
+      "translation": "прямой",
       "examples": [],
       "mark": ""
     },
@@ -3634,6 +4060,14 @@
       "mark": ""
     },
     {
+      "id": 3839351356,
+      "type": "adj",
+      "word": "trumpi",
+      "translation": "короткий",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 1279967933,
       "type": "pronoun",
       "word": "trylika",
@@ -3718,6 +4152,14 @@
       "type": "noun",
       "word": "universitetas",
       "translation": "университет",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3554295882,
+      "type": "noun",
+      "word": "uodega",
+      "translation": "хвост",
       "examples": [],
       "mark": ""
     },
@@ -3954,6 +4396,14 @@
       "mark": ""
     },
     {
+      "id": 1615175332,
+      "type": "adj",
+      "word": "vienspalvis",
+      "translation": "монохромный",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3317021209,
       "type": "pronoun",
       "word": "vienuolika",
@@ -3982,6 +4432,22 @@
       "type": "noun",
       "word": "viešbutis",
       "translation": "отель",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3705788741,
+      "type": "noun",
+      "word": "vilna",
+      "translation": "Шерсть",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3863755320,
+      "type": "adj",
+      "word": "vilnonis",
+      "translation": "шерстяной",
       "examples": [],
       "mark": ""
     },
@@ -4218,6 +4684,14 @@
       "mark": ""
     },
     {
+      "id": 1312324765,
+      "type": "noun",
+      "word": "šalikas",
+      "translation": "шарф",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 970376804,
       "type": "adj",
       "word": "šalta",
@@ -4314,6 +4788,22 @@
       "mark": ""
     },
     {
+      "id": 3679613598,
+      "type": "noun",
+      "word": "šilkas",
+      "translation": "шелк",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 2755673196,
+      "type": "adj",
+      "word": "šilkinis",
+      "translation": "шелковистый",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 970378852,
       "type": "adj",
       "word": "šilta",
@@ -4350,6 +4840,14 @@
       "type": "noun",
       "word": "šiuos užrašus",
       "translation": "эти примечания",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 2553627592,
+      "type": "adj",
+      "word": "šlapdriba",
+      "translation": "мокрой",
       "examples": [],
       "mark": ""
     },
@@ -4394,10 +4892,34 @@
       "mark": ""
     },
     {
+      "id": 726093942,
+      "type": "adj",
+      "word": "šviesus",
+      "translation": "cветлый",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 896977922,
+      "type": "verb",
+      "word": "šviečia",
+      "translation": "сияет",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 507121972,
       "type": "noun",
       "word": "šį",
       "translation": "эта",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 785111053,
+      "type": "adj",
+      "word": "ūsai",
+      "translation": "усы",
       "examples": [],
       "mark": ""
     },
@@ -4446,6 +4968,14 @@
       "type": "noun",
       "word": "židinys",
       "translation": "камин",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3562180503,
+      "type": "noun",
+      "word": "žiedas",
+      "translation": "кольцо",
       "examples": [],
       "mark": ""
     },

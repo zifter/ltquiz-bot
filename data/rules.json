@@ -71,6 +71,12 @@
       "name": "Окончания глаголов для различных лиц",
       "descr": "",
       "image": "images/locative.png"
+    },
+    {
+      "id": 14,
+      "name": "Окончания прилагательных в именительном падеже",
+      "descr": "",
+      "image": "images/adj_nominative_case.png"
     }
   ]
 }
