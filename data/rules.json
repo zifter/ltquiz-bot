@@ -77,6 +77,12 @@
       "name": "Окончания прилагательных в именительном падеже",
       "descr": "",
       "image": "images/adj_nominative_case.png"
+    },
+    {
+      "id": 15,
+      "name": "Окончания прилагательных в именительном падеже",
+      "descr": "",
+      "image": "images/adj_endings.jpg"
     }
   ]
 }
