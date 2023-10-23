@@ -1,5 +1,5 @@
 {
-  "created": "2023-10-22T10:34:33.926723+00:00",
+  "created": "2023-10-23T10:35:34.765582+00:00",
   "words": [
     {
       "id": 4227778829,
@@ -500,6 +500,14 @@
       "mark": ""
     },
     {
+      "id": 2293649395,
+      "type": "phrase",
+      "word": "aš manau",
+      "translation": "я думаю\\считаю, больше про факту",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 444314977,
       "type": "phrase",
       "word": "aš nerečiau",
@@ -750,6 +758,14 @@
       "mark": ""
     },
     {
+      "id": 3571443520,
+      "type": "adj",
+      "word": "bjauru!",
+      "translation": "противный!",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 1162693566,
       "type": "noun",
       "word": "bliuzonas",
@@ -818,6 +834,14 @@
       "type": "noun",
       "word": "dagus",
       "translation": "небо",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 2931726009,
+      "type": "noun",
+      "word": "daiktavardis",
+      "translation": "существительное",
       "examples": [],
       "mark": ""
     },
@@ -1048,6 +1072,22 @@
       "type": "adj",
       "word": "dryžuotas",
       "translation": "в полоску",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 2225360316,
+      "type": "adj",
+      "word": "dryžuotas",
+      "translation": "в полоску",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3422718529,
+      "type": "adj",
+      "word": "drėgna",
+      "translation": "влажный",
       "examples": [],
       "mark": ""
     },
@@ -1397,6 +1437,14 @@
       "examples": [
         "As grouti pianinu"
       ],
+      "mark": ""
+    },
+    {
+      "id": 778063167,
+      "type": "verb",
+      "word": "grybauti",
+      "translation": "ходить по грибы",
+      "examples": [],
       "mark": ""
     },
     {
@@ -1774,6 +1822,14 @@
       "mark": ""
     },
     {
+      "id": 221263927,
+      "type": "adj",
+      "word": "karšta",
+      "translation": "горячий",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 707230642,
       "type": "noun",
       "word": "karšti patiekalai",
@@ -1966,6 +2022,14 @@
       "mark": ""
     },
     {
+      "id": 1047244215,
+      "type": "phrase",
+      "word": "kiek žmonių nuotraukeje?",
+      "translation": "сколько людей на фото?",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 424234313,
       "type": "pronoun",
       "word": "kiek?",
@@ -2026,6 +2090,14 @@
       "type": "noun",
       "word": "klausimus",
       "translation": "вопрос",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 2839823872,
+      "type": "noun",
+      "word": "klausimų",
+      "translation": "вопросы",
       "examples": [],
       "mark": ""
     },
@@ -2174,6 +2246,14 @@
       "type": "noun",
       "word": "kėdė",
       "translation": "стул",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1183490115,
+      "type": "noun",
+      "word": "kūdikis",
+      "translation": "малыш",
       "examples": [],
       "mark": ""
     },
@@ -2416,6 +2496,14 @@
       "type": "noun",
       "word": "mama",
       "translation": "мама",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1173228214,
+      "type": "noun",
+      "word": "manyti,mano,manė",
+      "translation": "думать",
       "examples": [],
       "mark": ""
     },
@@ -3084,6 +3172,14 @@
       "mark": ""
     },
     {
+      "id": 969776048,
+      "type": "noun",
+      "word": "pavadinimas",
+      "translation": "имя",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 1080022028,
       "type": "noun",
       "word": "paveikslė",
@@ -3186,6 +3282,14 @@
       "type": "verb",
       "word": "piešti, piešia, piešė",
       "translation": "рисовать",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3521040445,
+      "type": "adj",
+      "word": "piktas",
+      "translation": "злой",
       "examples": [],
       "mark": ""
     },
@@ -3426,6 +3530,14 @@
       "mark": ""
     },
     {
+      "id": 3855994441,
+      "type": "adj",
+      "word": "puikus",
+      "translation": "большой",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 1179013204,
       "type": "noun",
       "word": "puodukas",
@@ -3528,6 +3640,14 @@
       "type": "noun",
       "word": "rankinė",
       "translation": "сумочка",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3823751507,
+      "type": "noun",
+      "word": "ratus",
+      "translation": "колеса",
       "examples": [],
       "mark": ""
     },
@@ -3814,6 +3934,14 @@
       "mark": ""
     },
     {
+      "id": 1238193863,
+      "type": "noun",
+      "word": "senas vyras",
+      "translation": "старый человек",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 1027948110,
       "type": "noun",
       "word": "seneliai",
@@ -3834,6 +3962,14 @@
       "type": "noun",
       "word": "senelė/močiute",
       "translation": "бабушка",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3622032724,
+      "type": "noun",
+      "word": "senis",
+      "translation": "старик (в негативном смысле)",
       "examples": [],
       "mark": ""
     },
@@ -3934,6 +4070,14 @@
       "mark": ""
     },
     {
+      "id": 1794396842,
+      "type": "noun",
+      "word": "skambėti, skamba, skambėjo",
+      "translation": "зонтик",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3705097814,
       "type": "noun",
       "word": "skanus",
@@ -3974,18 +4118,18 @@
       "mark": ""
     },
     {
-      "id": 112018518,
-      "type": "noun",
-      "word": "skėtis",
-      "translation": "зонтик",
-      "examples": [],
-      "mark": ""
-    },
-    {
       "id": 3905867328,
       "type": "adj",
       "word": "slidus",
       "translation": "сколький",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3906061774,
+      "type": "adj",
+      "word": "smagu",
+      "translation": "веселый",
       "examples": [],
       "mark": ""
     },
@@ -4026,6 +4170,14 @@
       "type": "noun",
       "word": "spalvos",
       "translation": "цвета",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1563966017,
+      "type": "adj",
+      "word": "spalvotas",
+      "translation": "цветной",
       "examples": [],
       "mark": ""
     },
@@ -4130,6 +4282,14 @@
       "type": "verb",
       "word": "stovėti,stovi,stovėjo",
       "translation": "стоящий",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 534856451,
+      "type": "phrase",
+      "word": "striprus vėjas",
+      "translation": "сильный ветер",
       "examples": [],
       "mark": ""
     },
@@ -4824,6 +4984,14 @@
       "mark": ""
     },
     {
+      "id": 145011338,
+      "type": "noun",
+      "word": "veiksmažodis",
+      "translation": "глагол",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 2482843709,
       "type": "verb",
       "word": "veikti, veiki, veikė",
@@ -5016,6 +5184,14 @@
       "mark": ""
     },
     {
+      "id": 1606919450,
+      "type": "phrase",
+      "word": "visur balta",
+      "translation": "везде белое",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 870898072,
       "type": "noun",
       "word": "visų",
@@ -5092,6 +5268,14 @@
       "type": "verb",
       "word": "vėluoti, vėluoja, vėlavo",
       "translation": "опоздать",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1261814300,
+      "type": "phrase",
+      "word": "yra daug balų",
+      "translation": "есть много луж",
       "examples": [],
       "mark": ""
     },
@@ -5292,6 +5476,14 @@
       "type": "adj",
       "word": "šilta",
       "translation": "Теплый",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 970378852,
+      "type": "adj",
+      "word": "šilta",
+      "translation": "теплый",
       "examples": [],
       "mark": ""
     },
