@@ -1,5 +1,5 @@
 {
-  "created": "2023-10-25T10:35:03.669873+00:00",
+  "created": "2023-10-26T10:34:48.259365+00:00",
   "words": [
     {
       "id": 4227778829,
@@ -37,6 +37,14 @@
       "examples": [
         "берёза"
       ],
+      "mark": ""
+    },
+    {
+      "id": 953012211,
+      "type": "",
+      "word": "Galūnas",
+      "translation": "окончание конечности",
+      "examples": [],
       "mark": ""
     },
     {
@@ -292,6 +300,22 @@
       "mark": ""
     },
     {
+      "id": 3231337340,
+      "type": "",
+      "word": "aną savaitę",
+      "translation": "на прошлой неделе",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3231337340,
+      "type": "",
+      "word": "aną savaitę",
+      "translation": "на прошлой неделе",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 447627067,
       "type": "noun",
       "word": "anūkas",
@@ -352,6 +376,14 @@
       "type": "verb",
       "word": "apsipirkti, apsiperka, apsipirko",
       "translation": "закупать",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 117484028,
+      "type": "noun",
+      "word": "aptarti, aptaria, aptarė",
+      "translation": "обсуждалось, обсуждалось, обсуждалось",
       "examples": [],
       "mark": ""
     },
@@ -830,6 +862,14 @@
       "mark": ""
     },
     {
+      "id": 3487027524,
+      "type": "noun",
+      "word": "dabar",
+      "translation": "сейчас",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3822899525,
       "type": "noun",
       "word": "dagus",
@@ -850,6 +890,14 @@
       "type": "noun",
       "word": "dangus",
       "translation": "небо",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1860686034,
+      "type": "noun",
+      "word": "dar",
+      "translation": "еще",
       "examples": [],
       "mark": ""
     },
@@ -934,6 +982,14 @@
       "type": "noun",
       "word": "degtine",
       "translation": "водка",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1634362724,
+      "type": "",
+      "word": "deja",
+      "translation": "к сожалению",
       "examples": [],
       "mark": ""
     },
@@ -1180,6 +1236,14 @@
       "mark": ""
     },
     {
+      "id": 3540896662,
+      "type": "noun",
+      "word": "dėdė",
+      "translation": "дядя",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3675075538,
       "type": "noun",
       "word": "dėl",
@@ -1192,6 +1256,22 @@
       "type": "noun",
       "word": "dėmesio",
       "translation": "Внимание",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 2011301063,
+      "type": "verb",
+      "word": "dėstyti,dėsto,dėstė",
+      "translation": "учит",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1375342257,
+      "type": "noun",
+      "word": "dėstyyojas",
+      "translation": "лектор",
       "examples": [],
       "mark": ""
     },
@@ -1280,6 +1360,22 @@
       "type": "pronoun",
       "word": "gal",
       "translation": "maybe?",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 4267209139,
+      "type": "noun",
+      "word": "gal kavos?",
+      "translation": "вы хотите кофе?",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1634492890,
+      "type": "",
+      "word": "galas",
+      "translation": "конец",
       "examples": [],
       "mark": ""
     },
@@ -1542,6 +1638,14 @@
       "mark": ""
     },
     {
+      "id": 3807856184,
+      "type": "noun",
+      "word": "ir tada",
+      "translation": "а потом",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 571657185,
       "type": "phrase",
       "word": "ir taip toliau",
@@ -1570,6 +1674,22 @@
       "type": "noun",
       "word": "išsinešti",
       "translation": "на вынос",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1860882648,
+      "type": "noun",
+      "word": "jau",
+      "translation": "уже",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 7692650,
+      "type": "",
+      "word": "jau",
+      "translation": "уже",
       "examples": [],
       "mark": ""
     },
@@ -1654,10 +1774,34 @@
       "mark": "можно использовать и kada"
     },
     {
+      "id": 1454290440,
+      "type": "",
+      "word": "kai buvau mažas",
+      "translation": "когда я был маленьким",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 1313095491,
       "type": "noun",
       "word": "kailines",
       "translation": "шерсть",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3688842298,
+      "type": "noun",
+      "word": "kaimas",
+      "translation": "деревня",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1835652300,
+      "type": "",
+      "word": "kaimas",
+      "translation": "деревня",
       "examples": [],
       "mark": ""
     },
@@ -1682,6 +1826,14 @@
       "type": "phrase",
       "word": "kaip puiku",
       "translation": "как здорово",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 344888059,
+      "type": "",
+      "word": "kaip įdomu?",
+      "translation": "как интересно?",
       "examples": [],
       "mark": ""
     },
@@ -2532,6 +2684,14 @@
       "mark": ""
     },
     {
+      "id": 3448534629,
+      "type": "verb",
+      "word": "matyti, mato, matė",
+      "translation": "смотрите, посмотрите, увидел",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 972490430,
       "type": "verb",
       "word": "matyti,mato,matė",
@@ -2800,6 +2960,14 @@
       "mark": ""
     },
     {
+      "id": 1496454382,
+      "type": "",
+      "word": "mėnesį savaitę",
+      "translation": "неделя на неделю",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3806413893,
       "type": "noun",
       "word": "naktis",
@@ -3026,6 +3194,22 @@
       "mark": ""
     },
     {
+      "id": 3774948940,
+      "type": "",
+      "word": "pailsėti",
+      "translation": "отдых",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 2046250676,
+      "type": "verb",
+      "word": "pailsėti, pailsi, pailsėjo",
+      "translation": "отдыхай, отдыхал, отдохну",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 1146111418,
       "type": "noun",
       "word": "pakartoti",
@@ -3156,6 +3340,14 @@
       "mark": ""
     },
     {
+      "id": 1372118545,
+      "type": "noun",
+      "word": "pasiūlymas",
+      "translation": "предложение",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 995965504,
       "type": "noun",
       "word": "paskaita",
@@ -3232,6 +3424,14 @@
       "type": "noun",
       "word": "penktadienis",
       "translation": "пятница",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1078745774,
+      "type": "pronoun",
+      "word": "pernai",
+      "translation": "в прошлом году",
       "examples": [],
       "mark": ""
     },
@@ -3480,10 +3680,42 @@
       "mark": ""
     },
     {
+      "id": 2164112566,
+      "type": "",
+      "word": "praeita savaitę",
+      "translation": "на прошлой неделе",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1456739369,
+      "type": "noun",
+      "word": "praeiti,praeina,praėjo",
+      "translation": "пройти, пройти, пройти",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 1503352392,
       "type": "noun",
       "word": "praeitą",
       "translation": "прошлое",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1197324824,
+      "type": "",
+      "word": "praeitą mėnesį",
+      "translation": "прошлый месяц",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 637256693,
+      "type": "",
+      "word": "praeitą savaitę",
+      "translation": "на прошлой неделе",
       "examples": [],
       "mark": ""
     },
@@ -3522,10 +3754,34 @@
       "mark": "и винительный падеж"
     },
     {
+      "id": 1056209439,
+      "type": "",
+      "word": "prieš dvejus",
+      "translation": "два назад",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 4121947530,
+      "type": "noun",
+      "word": "prieš trejus mėnesius",
+      "translation": "три месяца назад",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 1062424507,
       "type": "noun",
       "word": "prigimtis",
       "translation": "природа",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1071313965,
+      "type": "",
+      "word": "priš savaitę /metus",
+      "translation": "займет неделю /год",
       "examples": [],
       "mark": ""
     },
@@ -3614,6 +3870,14 @@
       "type": "noun",
       "word": "raktai",
       "translation": "Ключи",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3823292755,
+      "type": "noun",
+      "word": "ramus",
+      "translation": "спокойствие",
       "examples": [],
       "mark": ""
     },
@@ -3764,6 +4028,14 @@
       "mark": ""
     },
     {
+      "id": 995253960,
+      "type": "noun",
+      "word": "rungtynes",
+      "translation": "матчи",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3723094345,
       "type": "noun",
       "word": "rytoi",
@@ -3890,6 +4162,14 @@
       "type": "noun",
       "word": "savaitgalis",
       "translation": "выходные дни",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 4181382620,
+      "type": "",
+      "word": "savaitė",
+      "translation": "неделя",
       "examples": [],
       "mark": ""
     },
@@ -4022,6 +4302,14 @@
       "mark": ""
     },
     {
+      "id": 1852139988,
+      "type": "",
+      "word": "siena",
+      "translation": "стена",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3705364133,
       "type": "noun",
       "word": "sieną",
@@ -4122,6 +4410,14 @@
       "type": "adj",
       "word": "slidus",
       "translation": "сколький",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1734463196,
+      "type": "",
+      "word": "smagia",
+      "translation": "веселье",
       "examples": [],
       "mark": ""
     },
@@ -4342,6 +4638,14 @@
       "mark": ""
     },
     {
+      "id": 3374037949,
+      "type": "noun",
+      "word": "susirinkimą",
+      "translation": "встреча",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 307795962,
       "type": "verb",
       "word": "susitikiti, susitinka, susitiko",
@@ -4454,6 +4758,14 @@
       "mark": ""
     },
     {
+      "id": 936758661,
+      "type": "",
+      "word": "taisyklė",
+      "translation": "правило",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3487617365,
       "type": "noun",
       "word": "takas",
@@ -4536,6 +4848,14 @@
       "mark": ""
     },
     {
+      "id": 3488208098,
+      "type": "noun",
+      "word": "teta",
+      "translation": "тетя",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3789216067,
       "type": "noun",
       "word": "tiesa",
@@ -4556,6 +4876,22 @@
       "type": "adj",
       "word": "tiesūs",
       "translation": "прямой",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1923797717,
+      "type": "",
+      "word": "tikrai?",
+      "translation": "действительно?",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3797170766,
+      "type": "noun",
+      "word": "tikslas",
+      "translation": "цель",
       "examples": [],
       "mark": ""
     },
@@ -4782,6 +5118,22 @@
       "translation": "за",
       "examples": [],
       "mark": "и родительный  падеж"
+    },
+    {
+      "id": 3576507102,
+      "type": "",
+      "word": "užsiena",
+      "translation": "за границей",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 942484366,
+      "type": "",
+      "word": "užsienį",
+      "translation": "за границей",
+      "examples": [],
+      "mark": ""
     },
     {
       "id": 1469423685,
@@ -5268,6 +5620,14 @@
       "type": "verb",
       "word": "vėluoti, vėluoja, vėlavo",
       "translation": "опоздать",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3792516185,
+      "type": "noun",
+      "word": "vėsu",
+      "translation": "прохладный",
       "examples": [],
       "mark": ""
     },
