@@ -1,5 +1,5 @@
 {
-  "created": "2023-11-26T10:34:43.723379+00:00",
+  "created": "2023-11-27T10:35:45.147491+00:00",
   "words": [
     {
       "id": 4227778829,
@@ -3262,6 +3262,14 @@
       "type": "noun",
       "word": "paltos",
       "translation": "пальто",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3433081364,
+      "type": "",
+      "word": "palyginti, palygina, palygino",
+      "translation": "сравнивать",
       "examples": [],
       "mark": ""
     },
