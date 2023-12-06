@@ -89,6 +89,12 @@
       "name": "Окончания прилагательных в разных падежах",
       "descr": "",
       "image": "images/adj-endings-v2.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Сравнительная форма",
+      "descr": "",
+      "image": "images/comparative-form.jpg"
     }
   ]
 }
