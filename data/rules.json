@@ -83,6 +83,12 @@
       "name": "Окончания прилагательных в именительном падеже",
       "descr": "",
       "image": "images/adj_endings.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Окончания прилагательных в разных падежах",
+      "descr": "",
+      "image": "images/adj-endings-v2.jpg"
     }
   ]
 }
