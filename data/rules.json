@@ -95,6 +95,12 @@
       "name": "Сравнительная форма",
       "descr": "",
       "image": "images/comparative-form.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Вопросы для прилагательных по падежам",
+      "descr": "",
+      "image": "images/questions-for-adj.png]"
     }
   ]
 }
