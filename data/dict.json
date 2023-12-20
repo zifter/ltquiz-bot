@@ -1,5 +1,5 @@
 {
-  "created": "2023-12-19T10:35:21.688998+00:00",
+  "created": "2023-12-20T10:34:32.894601+00:00",
   "words": [
     {
       "id": 4227778829,
@@ -432,6 +432,14 @@
       "type": "verb",
       "word": "atostogauti, atostogauja, atostogavo",
       "translation": "отправляться в отпуск",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1474589457,
+      "type": "verb",
+      "word": "atrodyti, atrodo, atrodė",
+      "translation": "выглядеть, казаться",
       "examples": [],
       "mark": ""
     },
@@ -4542,6 +4550,14 @@
       "mark": ""
     },
     {
+      "id": 873151644,
+      "type": "verb",
+      "word": "sirgti, serga, sirgo",
+      "translation": "болеть",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 1075273233,
       "type": "verb",
       "word": "skaityti, skaito, skaitė",
@@ -4601,7 +4617,7 @@
       "id": 1795246260,
       "type": "verb",
       "word": "skaudėti, skauda, skaudėjo",
-      "translation": "болеть",
+      "translation": "болит",
       "examples": [
         "ką? винительный падеж"
       ],
