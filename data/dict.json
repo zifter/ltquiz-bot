@@ -1,5 +1,5 @@
 {
-  "created": "2024-01-07T10:34:44.061715+00:00",
+  "created": "2024-01-08T10:35:45.284599+00:00",
   "words": [
     {
       "id": 4227778829,
@@ -192,6 +192,14 @@
       "type": "noun",
       "word": "airis",
       "translation": "ирландец",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 1481329457,
+      "type": "noun",
+      "word": "aitvaras",
+      "translation": "воздушный змей",
       "examples": [],
       "mark": ""
     },
@@ -753,7 +761,7 @@
       "id": 3488207161,
       "type": "noun",
       "word": "batai",
-      "translation": "ботинки",
+      "translation": "ботинки\\сапоги",
       "examples": [],
       "mark": ""
     },
@@ -4904,6 +4912,14 @@
       "mark": ""
     },
     {
+      "id": 1011899070,
+      "type": "noun",
+      "word": "suoliukas",
+      "translation": "скамейка",
+      "examples": [],
+      "mark": ""
+    },
+    {
       "id": 3374037949,
       "type": "noun",
       "word": "susirinkimą",
@@ -5694,6 +5710,14 @@
       "type": "pronoun",
       "word": "vienuoliktas",
       "translation": "одинадцатый",
+      "examples": [],
+      "mark": ""
+    },
+    {
+      "id": 3806001477,
+      "type": "noun",
+      "word": "vieta ",
+      "translation": "место",
       "examples": [],
       "mark": ""
     },
